@@ -79,13 +79,18 @@ export default {
 </script>
 
 <style>
+body{
+  padding: 0;
+    margin: 0;
+    border: 0;
+}
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
+    
   }
   a{
     text-decoration: none;
@@ -101,22 +106,23 @@ export default {
    */
 
   .right{
+    border:0;
+    padding: 0;
+    margin: 0;
     float: right;
-    height: 50rem;
-    width: 79%;
-    /*border: 1px black solid;*/
-    border-radius: 30px 30px 30px 30px;
-    background: #ededed;
+    height: 100%;
+    width: 100%;
+    background: #ccc9c9;
     position: relative;
-    left:-1%;
 
   }
+  /*
   .biaoqian{
     padding: 10px;
     margin:30px;
     border-radius: 10px;
     transition: all 0.3s;
-  }
+  }*/
   .biaoqian:hover{
     background: #3d9dea;
   }
@@ -125,7 +131,7 @@ export default {
     width: 80%;
     max-height: 80%;
     overflow :hidden;
-    scroll-y:scroll;
+    overflow-y: scroll;
   }
 
 
