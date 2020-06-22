@@ -1,7 +1,15 @@
+<!-- 
+  writer:QINGDKJ
+  E-mail:beautifuldistance@163.com
+  Update date:2020/6/22
+-->
+
 <template>
   <div id="app">
 <!--    <img src="./assets/logo.png">-->
 <!--    <router-view/>-->
+
+    <!--
     <div class="left">
 
         <br>
@@ -43,11 +51,9 @@
           <router-link to="/tools" class="biaoqian">实用工具</router-link>
         </div>
 
-
-
-
-
     </div>
+
+    -->
     <div class="right">
       <center>
         <router-view class="showRouterPage"></router-view>
@@ -85,22 +91,21 @@ export default {
     text-decoration: none;
     color:black;
   }
-  .left{
+  /*.left{
     float: left;
     height:50rem;
     width: 20%;
-    /*border: 1px black solid;*/
     border-radius: 30px 0 0 30px;
     background: #e3e3e3;
-
-
   }
+   */
+
   .right{
     float: right;
     height: 50rem;
     width: 79%;
     /*border: 1px black solid;*/
-    border-radius: 0 30px 30px 0;
+    border-radius: 30px 30px 30px 30px;
     background: #ededed;
     position: relative;
     left:-1%;

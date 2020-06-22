@@ -7,7 +7,7 @@
       <div class="item" v-for="item in list">
         <span class="show">
           <img src="../assets/icon.jpg" alt="icon" class="icon-m">
-          <button class="download-bt" :title='downloadContent'>{{item.type}}</button>
+          <button class="download-bt" :title='downloadContent'>{{item.name}}</button>
         </span>
 
       </div>
@@ -20,6 +20,8 @@
 
 <script>
   import axios from 'axios'
+  import Vue from "vue";
+
     export default {
         name: "Programming",
       data(){
@@ -30,10 +32,15 @@
       },
       methods:{
         getInfo(){
-          axios.get('http://47.92.39.166:3000/getArticles').then(res=>{
+          axios.get('http://dcstore.shenmo.tech:80/store/tools/applist.json').then(res=>{
             console.log(res);
-            this.list=res.data.data;
+            this.list=res.data;
+
           })
+
+          // 请求接口 后台的接口为8000 我们本地的接口为8080,所以我们需要去到vue.config.js配置跨域
+
+
         }
       },
       mounted() {
