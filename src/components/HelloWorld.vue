@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <center>
+      <br><br>
       <h1 class="title">Deepin Community Store</h1>
       <h3 class="more-info">
         Have more.

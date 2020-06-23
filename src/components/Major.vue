@@ -1,10 +1,11 @@
 <template>
   <div id="app">
+    <br>
     <h2>专业软件</h2>
     <br>
 
     <div class="list">
-      <div class="item" v-for="item in list">
+      <div class="item" v-for="item in list" :key="item.tip">
         <span class="show">
           <img src="../assets/icon.jpg" alt="icon" class="icon-m">
           <button class="download-bt" :title='downloadContent'>{{item.type}}</button>
@@ -43,6 +44,7 @@
 <style scoped>
   #app{
     height: 700px;
+    width: 100%;
     overflow: hidden;
     overflow-y: scroll;
     border: transparent;

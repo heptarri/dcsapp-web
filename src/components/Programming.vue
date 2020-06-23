@@ -1,13 +1,14 @@
 <template>
   <div id="app">
+    <br>
     <h2>编程开发</h2>
     <br>
 
     <div class="list">
-      <div class="item" v-for="item in list">
+      <div class="item" v-for="item in list" :key="item.tip">
         <span class="show">
           <img src="../assets/icon.jpg" alt="icon" class="icon-m">
-          <button class="download-bt" :title='downloadContent'>{{item.name}}</button>
+          <button class="download-bt" :title='downloadContent'>{{item.type}}</button>
         </span>
 
       </div>
@@ -32,9 +33,9 @@
       },
       methods:{
         getInfo(){
-          axios.get('http://dcstore.shenmo.tech:80/store/tools/applist.json').then(res=>{
+          axios.get('http://47.92.39.166:3000/getArticles').then(res=>{
             console.log(res);
-            this.list=res.data;
+            this.list=res.data.data;
 
           })
 
@@ -52,6 +53,7 @@
 <style scoped>
   #app{
     height: 700px;
+    width: 100%;
     overflow: hidden;
     overflow-y: scroll;
     border: transparent;

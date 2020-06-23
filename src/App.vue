@@ -9,7 +9,7 @@
 <!--    <img src="./assets/logo.png">-->
 <!--    <router-view/>-->
 
-    <!--
+    
     <div class="left">
 
         <br>
@@ -53,7 +53,7 @@
 
     </div>
 
-    -->
+    
     <div class="right">
       <center>
         <router-view class="showRouterPage"></router-view>
