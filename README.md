@@ -1,6 +1,10 @@
-# dcsapp
+# DCSAPP-WEB
 
-> Deepin Community Store's Client
+## This is part of Deepin Community Store's Client Pages.
+
+
+> If you find every trouble in this project,please e-mail at beautifuldistance@163.com .
+
 
 ## Build Setup
 
@@ -19,3 +23,6 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+> by DCS Team.
