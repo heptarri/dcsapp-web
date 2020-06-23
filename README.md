@@ -25,4 +25,24 @@ npm run build --report
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 
-> by DCS Team.
+## How to use?
+
+假设服务器网址为 http://localhost:8080/
+
+> 主页的网址为 http://localhost:8080/#/
+
+> 编程开发类的网址是 http://localhost:8080/#/programming
+
+> 专业软件类的网址是 http://localhost:8080/#/major
+
+> 主题美化类的网址是 http://localhost:8080/#/themes
+
+> 影音视听类的网址是 http://localhost:8080/#/musicandsound
+
+> 游戏娱乐类的网址是 http://localhost:8080/#/games
+
+> 作图/看图类的网址是 http://localhost:8080/#/photos
+
+> 社交软件类的网址是 http://localhost:8080/#/relations
+
+> 实用工具类的网址是 http://localhost:8080/#/tools
