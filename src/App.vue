@@ -6,10 +6,10 @@
 
 <template>
   <div id="app">
-<!--    <img src="./assets/logo.png">-->
-<!--    <router-view/>-->
+    <!--    <img src="./assets/logo.png">-->
+    <!--    <router-view/>-->
 
-    
+    <!--    
     <div class="left">
 
         <br>
@@ -52,8 +52,8 @@
         </div>
 
     </div>
+    -->
 
-    
     <div class="right">
       <center>
         <router-view class="showRouterPage"></router-view>
@@ -64,39 +64,36 @@
 
 <script>
 export default {
-  name: 'App',
-  data(){
-    return{
-
-    }
+  name: "App",
+  data() {
+    return {};
   },
-  methods:{
-    clickTitle:function () {
-      window.open("/")
+  methods: {
+    clickTitle: function() {
+      window.open("/");
     }
   }
-}
+};
 </script>
 
 <style>
-body{
+body {
   padding: 0;
-    margin: 0;
-    border: 0;
+  margin: 0;
+  border: 0;
 }
-  #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    
-  }
-  a{
-    text-decoration: none;
-    color:black;
-  }
-  /*.left{
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/*.left{
     float: left;
     height:50rem;
     width: 20%;
@@ -105,36 +102,33 @@ body{
   }
    */
 
-  .right{
-    border:0;
-    padding: 0;
-    margin: 0;
-    float: right;
-    height: 100%;
-    width: 100%;
-    background: #ccc9c9;
-    position: relative;
-
-  }
-  /*
+.right {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  float: right;
+  height: 100%;
+  width: 100%;
+  background: #ccc9c9;
+  position: relative;
+}
+/*
   .biaoqian{
     padding: 10px;
     margin:30px;
     border-radius: 10px;
     transition: all 0.3s;
   }*/
-  .biaoqian:hover{
-    background: #3d9dea;
-  }
-  .showRouterPage{
-    border:solid 1px black;
-    width: 80%;
-    max-height: 80%;
-    overflow :hidden;
-    overflow-y: scroll;
-  }
-
-
+.biaoqian:hover {
+  background: #3d9dea;
+}
+.showRouterPage {
+  border: solid 1px black;
+  width: 80%;
+  max-height: 80%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
 </style>
 
 
