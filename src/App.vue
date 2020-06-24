@@ -9,7 +9,7 @@
     <!--    <img src="./assets/logo.png">-->
     <!--    <router-view/>-->
 
-    <!--    
+     
     <div class="left">
 
         <br>
@@ -32,7 +32,7 @@
         </div>
 
         <div class="biaoqian">
-          <router-link to="/musicandsound" class="biaoqian">影音视听</router-link>
+          <router-link to="/musicandsound" class="biaoqian">音乐欣赏</router-link>
         </div>
 
         <div class="biaoqian">
@@ -51,8 +51,28 @@
           <router-link to="/tools" class="biaoqian">实用工具</router-link>
         </div>
 
+         <div class="biaoqian">
+          <router-link to="/network" class="biaoqian">网络应用</router-link>
+        </div>
+
+         <div class="biaoqian">
+          <router-link to="/office" class="biaoqian">办公学习</router-link>
+        </div>
+
+         <div class="biaoqian">
+          <router-link to="/reading" class="biaoqian">阅读写作</router-link>
+        </div>
+
+         <div class="biaoqian">
+          <router-link to="/videos" class="biaoqian">视频观看</router-link>
+        </div>
+
+         <div class="biaoqian">
+          <router-link to="/others" class="biaoqian">其他应用</router-link>
+        </div>
+
     </div>
-    -->
+    
 
     <div class="right">
       <center>

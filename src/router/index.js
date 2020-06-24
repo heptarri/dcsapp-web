@@ -9,6 +9,11 @@ import Major from "../components/Major";
 import Photos from "../components/Photos";
 import Relations from "../components/Relations";
 import Tools from "../components/Tools";
+import Network from "../components/Network.vue";
+import Office from "../components/Office.vue";
+import Others from "../components/Others.vue";
+import Reading from "../components/Reading.vue";
+import Videos from "../components/Videos.vue";
 
 Vue.use(Router)
 
@@ -58,6 +63,31 @@ export default new Router({
       path: '/tools',
       name: 'Tools',
       component: Tools
+    },
+    {
+      path: '/network',
+      name: 'Network',
+      component: Network
+    },
+    {
+      path: '/office',
+      name: 'Office',
+      component: Office
+    },
+    {
+      path: '/others',
+      name: 'Others',
+      component: Others
+    },
+    {
+      path: '/reading',
+      name: 'Reading',
+      component: Reading
+    },
+    {
+      path: '/videos',
+      name: 'Videos',
+      component :Videos
     }
   ]
 })

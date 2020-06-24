@@ -46,3 +46,28 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 > 社交软件类的网址是 http://localhost:8080/#/relations
 
 > 实用工具类的网址是 http://localhost:8080/#/tools
+
+## 关于分类问题
+> chat -> Relations
+
+> development -> Programming
+
+> games -> Games
+
+> image_graphics -> Photos
+
+> music -> MusicAndSound
+
+> network -> Network
+
+> office -> Office
+
+> others -> Others
+
+> reading -> Reading
+
+> themes -> Themes
+
+> tools -> Tools
+
+> video -> Video

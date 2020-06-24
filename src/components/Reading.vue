@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <br />
-    <!-- <h2>实用工具</h2> -->
     <br />
     <center>
       <div class="list">
@@ -17,9 +16,9 @@
 </template>
 
 <script>
-import axios from "axios";
+import axios from 'axios';
 export default {
-  name: "Tools",
+  name: "Reading",
   data() {
     return {
       list: [],
@@ -32,8 +31,6 @@ export default {
         console.log(res);
         this.list = res.data.data;
       });
-
-      // 请求接口 后台的接口为8000 我们本地的接口为8080,所以我们需要去到vue.config.js配置跨域
     }
   },
   mounted() {
@@ -41,7 +38,6 @@ export default {
   }
 };
 </script>
-
 <style scoped>
 #app {
   height: 700px;
@@ -50,6 +46,7 @@ export default {
   overflow-y: scroll;
   border: transparent;
 }
+
 .item {
   width: 100px;
   height: 120px;

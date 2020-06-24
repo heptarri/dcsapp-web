@@ -1,16 +1,18 @@
 <template>
   <div id="app">
-    <br>
+    <br />
     <!-- <h2>社交软件</h2> -->
-    <br>
-    <div class="list">
-      <div class="item" v-for="item in list" :key="item.tip">
-        <span class="show">
-          <img src="../assets/icon.jpg" alt="icon" class="icon-m" />
-          <button class="download-bt" :title="downloadContent">{{item.type}}</button>
-        </span>
+    <br />
+    <center>
+      <div class="list">
+        <div class="item" v-for="item in list" :key="item.tip">
+          <span class="show">
+            <img src="../assets/icon.jpg" alt="icon" class="icon-m" />
+            <button class="download-bt" :title="downloadContent">{{item.type}}</button>
+          </span>
+        </div>
       </div>
-    </div>
+    </center>
   </div>
 </template>
 
@@ -81,5 +83,8 @@ export default {
   background: gray;
   margin: 10px;
   border-radius: 10px;
+}
+.list {
+  max-width: 900px;
 }
 </style>

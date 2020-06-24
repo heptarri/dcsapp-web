@@ -1,21 +1,23 @@
 <template>
   <div id="app">
-    <br>
+    <br />
     <!-- <h2>影音视听</h2> -->
-    <br>
-    <div class="list">
-      <div class="item" v-for="item in list" :key="item.tip">
-        <span class="show">
-          <img src="../assets/icon.jpg" alt="icon" class="icon-m" />
-          <button class="download-bt" :title="downloadContent">{{item.type}}</button>
-        </span>
+    <br />
+    <center>
+      <div class="list">
+        <div class="item" v-for="item in list" :key="item.tip">
+          <span class="show">
+            <img src="../assets/icon.jpg" alt="icon" class="icon-m" />
+            <button class="download-bt" :title="downloadContent">{{item.type}}</button>
+          </span>
+        </div>
       </div>
-    </div>
+    </center>
   </div>
 </template>
 
 <script>
-import axios from 'axios'
+import axios from "axios";
 export default {
   name: "MusicAndSound",
   data() {
@@ -41,49 +43,49 @@ export default {
 </script>
 
 <style scoped>
-#app{
-    height: 700px;
-    width: 100%;
-    overflow: hidden;
-    overflow-y: scroll;
-    border: transparent;
-  }
+#app {
+  height: 700px;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  border: transparent;
+}
 
-  .item{
-    width: 100px;
-    height: 120px;
-    background: #d2d2d2;
-    float: left;
-    border-radius: 20px;
-    transition: all 0.3s;
-    margin: 9px;
+.item {
+  width: 100px;
+  height: 120px;
+  background: #d2d2d2;
+  float: left;
+  border-radius: 20px;
+  transition: all 0.3s;
+  margin: 9px;
+}
+.item:hover {
+  background: lightgray;
+}
+.download-bt {
+  border: 0;
+  background: #7eb6f3;
+  border-radius: 10px;
+  height: 20px;
+  width: 80%;
+  color: black;
+  transition: all 0.3s;
+  position: relative;
+  bottom: 5px;
+}
+.download-bt:hover {
+  background: transparent;
+}
 
-  }
-  .item:hover{
-    background: lightgray;
-  }
-  .download-bt{
-    border: 0;
-    background:#7eb6f3;
-    border-radius: 10px;
-    height: 20px;
-    width: 80%;
-    color:black;
-    transition: all 0.3s;
-    position: relative;
-    bottom: 5px;
-
-  }
-  .download-bt:hover{
-    background: transparent;
-  }
-
-
-  .icon-m{
-    width: 80%;
-    height: 60%;
-    background: gray;
-    margin: 10px;
-    border-radius: 10px;
-  }
+.icon-m {
+  width: 80%;
+  height: 60%;
+  background: gray;
+  margin: 10px;
+  border-radius: 10px;
+}
+.list {
+  max-width: 900px;
+}
 </style>
