@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <br>
-    <h2>编程开发</h2>
+    <!-- <h2>编程开发</h2> -->
     <br>
 
     <div class="list">

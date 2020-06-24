@@ -81,6 +81,7 @@ body {
   padding: 0;
   margin: 0;
   border: 0;
+  background:white;
 }
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
@@ -88,6 +89,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background:white;
 }
 a {
   text-decoration: none;
@@ -109,7 +111,7 @@ a {
   float: right;
   height: 100%;
   width: 100%;
-  background: #ccc9c9;
+  background: white;
   position: relative;
 }
 /*

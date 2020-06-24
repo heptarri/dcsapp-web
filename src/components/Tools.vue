@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <br>
-    <h2>实用工具</h2>
+    <!-- <h2>实用工具</h2> -->
     <br>
     <div class="list">
       <div class="item" v-for="item in list" :key="item.tip">

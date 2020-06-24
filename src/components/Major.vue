@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <br>
-    <h2>专业软件</h2>
+    <!-- <h2>专业软件</h2> -->
     <br>
 
     <div class="list">
