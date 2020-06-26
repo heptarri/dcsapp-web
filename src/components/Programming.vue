@@ -45,7 +45,7 @@ export default {
         "http://dcstore.shenmo.tech/store/development/" + pkgn + "/app.json"
       );
       window.open(
-        "http://dcstore.shenmo.tech/store/development/" + pkgn + "/app.json"
+        "http://dcstore.shenmo.tech/store/development/" + pkgn + "/app.json",'_self',''
       );
     }
   },
@@ -89,6 +89,7 @@ export default {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  line-height: 20px;
 }
 .download-bt:hover {
   background: transparent;
