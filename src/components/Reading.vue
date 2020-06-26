@@ -56,7 +56,7 @@ export default {
 
 <style scoped>
 #app {
-  height: 700px;
+  /* height: 700px; */
   width: 100%;
   overflow: hidden;
   overflow-y: scroll;
