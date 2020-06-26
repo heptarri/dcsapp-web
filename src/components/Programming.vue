@@ -66,7 +66,7 @@ export default {
 
 .item {
   width: 100px;
-  height: 120px;
+  height: 135px;
   background: #d2d2d2;
   float: left;
   border-radius: 20px;
@@ -85,7 +85,7 @@ export default {
   color: black;
   transition: all 0.3s;
   position: relative;
-  bottom: 5px;
+  bottom: 0px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
