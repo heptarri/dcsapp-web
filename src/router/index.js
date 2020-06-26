@@ -5,7 +5,6 @@ import Programming from "../components/Programming";
 import Themes from "../components/Themes";
 import MusicAndSound from "../components/MusicAndSound";
 import Games from "../components/Games";
-import Major from "../components/Major";
 import Photos from "../components/Photos";
 import Relations from "../components/Relations";
 import Tools from "../components/Tools";
@@ -43,11 +42,6 @@ export default new Router({
       path: '/games',
       name: 'Games',
       component: Games
-    },
-    {
-      path: '/major',
-      name: 'Major',
-      component: Major
     },
     {
       path: '/photos',

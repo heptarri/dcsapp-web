@@ -6,8 +6,12 @@
       <div class="list">
         <div class="item" v-for="item in list" :key="item.tip">
           <span class="show">
-            <img src="../assets/icon.jpg" alt="icon" class="icon-m" />
-            <button class="download-bt" :title="downloadContent">{{item.type}}</button>
+            <img :src="`http://dcstore.shenmo.tech/store/reading/${item.Pkgname}/icon.png`" alt="icon" class="icon-m"/>
+            <a target="_blank">
+              <button class="download-bt" :title="downloadContent" @click="GotoJson(item.Pkgname)" >
+                {{ item.Name }}
+              </button>
+            </a>
           </span>
         </div>
       </div>
@@ -16,7 +20,8 @@
 </template>
 
 <script>
-import axios from 'axios';
+import axios from "axios";
+import Vue from "vue";
 export default {
   name: "Reading",
   data() {
@@ -27,10 +32,20 @@ export default {
   },
   methods: {
     getInfo() {
-      axios.get("http://47.92.39.166:3000/getArticles").then(res => {
-        console.log(res);
-        this.list = res.data.data;
-      });
+      axios
+        .get("http://dcstore.shenmo.tech/store/reading/applist.json")
+        .then(res => {
+          this.list = res.data;
+        });
+    },
+    GotoJson(pkgn) {
+      this.PackageName = pkgn;
+      console.log(
+        "http://dcstore.shenmo.tech/store/reading/" + pkgn + "/app.json"
+      );
+      window.open(
+        "http://dcstore.shenmo.tech/store/reading/" + pkgn + "/app.json"
+      );
     }
   },
   mounted() {
@@ -38,6 +53,7 @@ export default {
   }
 };
 </script>
+
 <style scoped>
 #app {
   height: 700px;
@@ -69,6 +85,9 @@ export default {
   transition: all 0.3s;
   position: relative;
   bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .download-bt:hover {
   background: transparent;
@@ -77,7 +96,7 @@ export default {
 .icon-m {
   width: 80%;
   height: 60%;
-  background: gray;
+  background: rgb(211, 211, 211);
   margin: 10px;
   border-radius: 10px;
 }

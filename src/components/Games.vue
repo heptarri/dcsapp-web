@@ -1,14 +1,17 @@
 <template>
   <div id="app">
     <br />
-    <!-- <h2>游戏娱乐</h2> -->
     <br />
     <center>
       <div class="list">
         <div class="item" v-for="item in list" :key="item.tip">
           <span class="show">
-            <img src="../assets/icon.jpg" alt="icon" class="icon-m" />
-            <button class="download-bt" :title="downloadContent">{{item.type}}</button>
+            <img :src="`http://dcstore.shenmo.tech/store/games/${item.Pkgname}/icon.png`" alt="icon" class="icon-m"/>
+            <a target="_blank">
+              <button class="download-bt" :title="downloadContent" @click="GotoJson(item.Pkgname)" >
+                {{ item.Name }}
+              </button>
+            </a>
           </span>
         </div>
       </div>
@@ -18,6 +21,7 @@
 
 <script>
 import axios from "axios";
+import Vue from "vue";
 export default {
   name: "Games",
   data() {
@@ -28,12 +32,20 @@ export default {
   },
   methods: {
     getInfo() {
-      axios.get("http://47.92.39.166:3000/getArticles").then(res => {
-        console.log(res);
-        this.list = res.data.data;
-      });
-
-      // 请求接口 后台的接口为8000 我们本地的接口为8080,所以我们需要去到vue.config.js配置跨域
+      axios
+        .get("http://dcstore.shenmo.tech/store/games/applist.json")
+        .then(res => {
+          this.list = res.data;
+        });
+    },
+    GotoJson(pkgn) {
+      this.PackageName = pkgn;
+      console.log(
+        "http://dcstore.shenmo.tech/store/games/" + pkgn + "/app.json"
+      );
+      window.open(
+        "http://dcstore.shenmo.tech/store/games/" + pkgn + "/app.json"
+      );
     }
   },
   mounted() {
@@ -50,6 +62,7 @@ export default {
   overflow-y: scroll;
   border: transparent;
 }
+
 .item {
   width: 100px;
   height: 120px;
@@ -72,6 +85,9 @@ export default {
   transition: all 0.3s;
   position: relative;
   bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .download-bt:hover {
   background: transparent;
@@ -80,7 +96,7 @@ export default {
 .icon-m {
   width: 80%;
   height: 60%;
-  background: gray;
+  background: rgb(211, 211, 211);
   margin: 10px;
   border-radius: 10px;
 }

@@ -9,7 +9,7 @@
     <!--    <img src="./assets/logo.png">-->
     <!--    <router-view/>-->
 
-     
+    <!--
     <div class="left">
 
         <br>
@@ -21,10 +21,6 @@
 
         <div class="biaoqian">
           <router-link to="/programming" class="biaoqian">编程开发</router-link>
-        </div>
-
-        <div class="biaoqian">
-          <router-link to="/major" class="biaoqian">专业软件</router-link>
         </div>
 
         <div class="biaoqian">
@@ -72,7 +68,7 @@
         </div>
 
     </div>
-    
+    -->
 
     <div class="right">
       <center>

@@ -33,11 +33,9 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 > 编程开发类的网址是 http://localhost:8080/#/programming
 
-> 专业软件类的网址是 http://localhost:8080/#/major
-
 > 主题美化类的网址是 http://localhost:8080/#/themes
 
-> 影音视听类的网址是 http://localhost:8080/#/musicandsound
+> 音乐欣赏类的网址是 http://localhost:8080/#/musicandsound
 
 > 游戏娱乐类的网址是 http://localhost:8080/#/games
 
@@ -46,6 +44,17 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 > 社交软件类的网址是 http://localhost:8080/#/relations
 
 > 实用工具类的网址是 http://localhost:8080/#/tools
+
+> 视频观看类的网址是 http://localhost:8080/#/videos
+
+> 其他应用类的网址是 http://localhost:8080/#/others
+
+> 网络应用类的网址是 http://localhost:8080/#/network
+
+> 办公学习类的网址是 http://localhost:8080/#/office
+
+> 阅读写作类的网址是 http://localhost:8080/#/reading
+
 
 ## 关于分类问题
 > chat -> Relations
@@ -71,3 +80,4 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 > tools -> Tools
 
 > video -> Video
+
