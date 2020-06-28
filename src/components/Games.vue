@@ -6,7 +6,7 @@
       <div class="list">
         <div class="item" v-for="item in list" :key="item.tip">
           <span class="show">
-            <img :src="`http://dcstore.shenmo.tech/store/games/${item.Pkgname}/icon.png`" alt="icon" class="icon-m"/>
+            <img :src="`http://dcstore.shenmo.tech/store/games/${item.Pkgname}/icon.png`" alt="icon" class="icon-m" @click="GotoJson(item.Pkgname)" />
             <a target="_blank">
               <button class="download-bt" :title="downloadContent" @click="GotoJson(item.Pkgname)" >
                 {{ item.Name }}
