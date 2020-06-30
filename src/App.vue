@@ -141,11 +141,11 @@ a {
   background: #3d9dea;
 }
 .showRouterPage {
-  border: solid 1px black;
+  /* border: solid 1px black; */
   width: 80%;
   max-height: 80%;
   overflow: hidden;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 </style>
 

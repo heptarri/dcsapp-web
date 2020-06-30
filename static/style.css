@@ -2,8 +2,15 @@
   /* height: 200px; */
   width: 100%;
   overflow: hidden;
-  overflow-y: scroll;
-  border: transparent;
+  /* overflow-y: scroll; */
+  /* border: transparent; */
+}
+
+.app {
+  /* height: 200px; */
+  width: 100%;
+  overflow: hidden;
+  /* border: transparent; */
 }
 
 .item {

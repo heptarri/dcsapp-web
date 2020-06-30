@@ -1,13 +1,13 @@
 <template>
-  <div id="app">
+  <div class="app">
     <br />
     <br />
     <center>
       <div class="list">
         <div class="item" v-for="item in list" :key="item.tip">
           <span class="show">
-            <img :src="`http://dcstore.shenmo.tech/store/office/${item.Pkgname}/icon.png`" alt="icon" class="icon-m" @click="GotoJson(item.Pkgname)"/>
-          <span class="app-title">
+            <img :src="`http://dcstore.shenmo.tech/store/${category}/${item.Pkgname}/icon.png`" alt="icon" class="icon-m" @click="GotoJson(item.Pkgname)" />
+            <span class="app-title">
              <h3 class="app-name">{{item.Name}}</h3>
            </span>
             <a target="_blank">
@@ -25,8 +25,10 @@
 <script>
 import axios from "axios";
 import Vue from "vue";
+
 export default {
-  name: "Office",
+  name: "categoryComponent",
+  props:['category'],
   data() {
     return {
       list: [],
@@ -36,18 +38,17 @@ export default {
   methods: {
     getInfo() {
       axios
-        .get("http://dcstore.shenmo.tech/store/office/applist.json")
+        .get(`http://dcstore.shenmo.tech/store/${this.category}/applist.json`)
         .then(res => {
           this.list = res.data;
         });
     },
     GotoJson(pkgn) {
-      this.PackageName = pkgn;
       console.log(
-        "http://dcstore.shenmo.tech/store/office/" + pkgn + "/app.json"
+        `http://dcstore.shenmo.tech/store/${this.category}/${pkgn}/app.json`
       );
       window.open(
-        "http://dcstore.shenmo.tech/store/office/" + pkgn + "/app.json",'_self',''
+        `http://dcstore.shenmo.tech/store/${this.category}/${pkgn}/app.json`,'_self',''
       );
     }
   },
@@ -56,6 +57,7 @@ export default {
   }
 };
 </script>
+
 
 <style scoped>
   @import "../../static/style.css";

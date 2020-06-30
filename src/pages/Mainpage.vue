@@ -12,6 +12,8 @@
          应用问题反馈: http://www.shenmo.tech:420/?p=419
          APP建议: http://www.shenmo.tech:420/?p=422
      -->
+       <button @click="Search" class="bt-feedback">搜索应用</button>
+       <br>
        <button @click="Dream" class="bt-feedback">愿望墙</button>
        <br>
        <button @click="FeedBack" class="bt-feedback">问题反馈</button>
@@ -39,6 +41,9 @@
       },
       Proposal:function () {
         window.open("http://www.shenmo.tech:420/?p=422","_self","")
+      },
+      Search:function () {
+        this.$router.push({name:"Search"})
       }
     }
   }
