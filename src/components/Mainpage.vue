@@ -10,7 +10,7 @@
        <!--
          愿望墙: http://www.shenmo.tech:420/?p=91
          应用问题反馈: http://www.shenmo.tech:420/?p=419
-         APP建议: https://gitee.com/deepin-community-store/deepin-community-store/issues
+         APP建议: http://www.shenmo.tech:420/?p=422
      -->
        <button @click="Dream" class="bt-feedback">愿望墙</button>
        <br>
@@ -38,7 +38,7 @@
         window.open("http://www.shenmo.tech:420/?p=419","_self","")
       },
       Proposal:function () {
-        window.open("https://gitee.com/deepin-community-store/deepin-community-store/issues","_self","")
+        window.open("http://www.shenmo.tech:420/?p=422","_self","")
       }
     }
   }

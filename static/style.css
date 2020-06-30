@@ -1,0 +1,69 @@
+#app {
+  /* height: 200px; */
+  width: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  border: transparent;
+}
+
+.item {
+  width: 300px;
+  height: 100px;
+  background: #d2d2d2;
+  float: left;
+  border-radius: 20px;
+  transition: all 0.3s;
+  margin: 9px;
+}
+.item:hover {
+  background: lightgray;
+}
+.download-bt {
+  float: right;
+  border: 0;
+  background: #7eb6f3;
+  border-radius: 10px;
+  height: 20px;
+  width: 20%;
+  color: black;
+  transition: all 0.3s;
+  position: relative;
+  bottom: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 20px;
+  margin: 20px;
+  position: relative;
+  top:5px;
+
+}
+.download-bt:hover {
+  background: transparent;
+}
+
+.icon-m {
+  float: left;
+  width: 26%;
+  height: 77%;
+  background: rgb(211, 211, 211);
+  margin: 10px;
+  border-radius: 10px;
+}
+.list {
+  max-width: 900px;
+}
+.app-title{
+  height: 40px;
+  width: 160px;
+  float: left;
+  position: relative;
+  left:-20px;
+}
+.app-name{
+  font-size: 20px;
+  font-weight: lighter;
+  text-overflow: ellipsis;
+  line-height: 19px;
+  margin: 20px;
+}

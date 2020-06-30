@@ -7,9 +7,12 @@
         <div class="item" v-for="item in list" :key="item.tip">
           <span class="show">
             <img :src="`http://dcstore.shenmo.tech/store/office/${item.Pkgname}/icon.png`" alt="icon" class="icon-m" @click="GotoJson(item.Pkgname)"/>
+          <span class="app-title">
+             <h3 class="app-name">{{item.Name}}</h3>
+           </span>
             <a target="_blank">
               <button class="download-bt" :title="downloadContent" @click="GotoJson(item.Pkgname)" >
-                {{ item.Name }}
+                下载
               </button>
             </a>
           </span>
@@ -55,53 +58,5 @@ export default {
 </script>
 
 <style scoped>
-#app {
-  /* height: 200px; */
-  width: 100%;
-  overflow: hidden;
-  overflow-y: scroll;
-  border: transparent;
-}
-
-.item {
-  width: 100px;
-  height: 135px;
-  background: #d2d2d2;
-  float: left;
-  border-radius: 20px;
-  transition: all 0.3s;
-  margin: 9px;
-}
-.item:hover {
-  background: lightgray;
-}
-.download-bt {
-  border: 0;
-  background: #7eb6f3;
-  border-radius: 10px;
-  height: 20px;
-  width: 80%;
-  color: black;
-  transition: all 0.3s;
-  position: relative;
-  bottom: 0px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  line-height: 20px;
-}
-.download-bt:hover {
-  background: transparent;
-}
-
-.icon-m {
-  width: 80%;
-  height: 60%;
-  background: rgb(211, 211, 211);
-  margin: 10px;
-  border-radius: 10px;
-}
-.list {
-  max-width: 900px;
-}
+  @import "../../static/style.css";
 </style>

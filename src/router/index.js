@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+
+import Mainpage from "../components/Mainpage";
 import Programming from "../components/Programming";
 import Themes from "../components/Themes";
 import MusicAndSound from "../components/MusicAndSound";
@@ -14,14 +15,15 @@ import Others from "../components/Others.vue";
 import Reading from "../components/Reading.vue";
 import Videos from "../components/Videos.vue";
 
+
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'MainPage',
+      component: Mainpage
     },
     {
       path: '/programming',
