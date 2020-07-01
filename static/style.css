@@ -11,28 +11,36 @@
   width: 100%;
   overflow: hidden;
   /* border: transparent; */
+  padding: 50px;
 }
-
+.none-more{
+  color:gray;
+}
 .item {
   width: 300px;
   height: 100px;
-  background: #d2d2d2;
   float: left;
-  border-radius: 20px;
   transition: all 0.3s;
   margin: 9px;
+
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow:  25px 25px 50px #f0f0f0,
+  -25px -25px 50px #ffffff;
+
 }
 .item:hover {
-  background: lightgray;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow:  6px 6px 12px #f0f0f0,
+  -6px -6px 12px #ffffff;
 }
 .download-bt {
   float: right;
   border: 0;
-  background: #7eb6f3;
-  border-radius: 10px;
   height: 20px;
   width: 20%;
-  color: black;
+  color: #808080;
   transition: all 0.3s;
   position: relative;
   bottom: 0px;
@@ -41,21 +49,20 @@
   white-space: nowrap;
   line-height: 20px;
   margin: 20px;
-  position: relative;
-  top:5px;
-
+  background: transparent;
 }
 .download-bt:hover {
-  background: transparent;
+  color: #424242;
 }
 
 .icon-m {
   float: left;
   width: 26%;
   height: 77%;
-  background: rgb(211, 211, 211);
+  background: transparent;
   margin: 10px;
   border-radius: 10px;
+  transition: all 0.2s;
 }
 .list {
   max-width: 900px;
