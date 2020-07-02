@@ -20,8 +20,8 @@ import Search from "../pages/Search.vue";
 Vue.use(Router)
 
 export default new Router({
-  base:'',
-  mode:'history',
+  //base:'',
+  //mode:'history',
   routes: [
     {
       path: '/',
