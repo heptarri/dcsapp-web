@@ -1,9 +1,9 @@
-# DCSAPP-WEB
+# Spark Store Web Pages
 
-## This is part of Deepin Community Store's Client Pages.
+## This is part of Spark Store's Client Pages.
 
 
-> If you find every trouble in this project,please e-mail at beautifuldistance@163.com .
+> If you find every trouble in this project,please e-mail at qingdkj@outlook.com .
 
 
 ## Build Setup
@@ -80,8 +80,9 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 > tools -> Tools
 
 > video -> Videos
->
-### 注：本产品需要配合存储库:https://gitee.com/deepin-community-store/deepin-community-store 使用！
 
-#### by DCS Team
+
+### 注：本产品需要配合存储库: https://gitee.com/deepin-community-store/deepin-community-store 使用！
+
+#### by Spark Store Development Team.
 
