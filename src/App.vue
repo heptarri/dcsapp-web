@@ -136,13 +136,15 @@ a {
     margin:30px;
     border-radius: 10px;
     transition: all 0.3s;
-  }*/
+  }
 .biaoqian:hover {
   background: #3d9dea;
 }
+
+*/
 .showRouterPage {
   /* border: solid 1px black; */
-  width: 80%;
+  width: 100%;
   max-height: 80%;
   overflow: hidden;
   /* overflow-y: scroll; */

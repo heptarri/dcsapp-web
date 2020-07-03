@@ -29,31 +29,31 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 假设服务器网址为 http://localhost:8080/
 
-> 主页的网址为 http://localhost:8080/
+> 主页的网址为 http://localhost:8080/#/
 
-> 编程开发类的网址是 http://localhost:8080/programming
+> 编程开发类的网址是 http://localhost:8080/#/programming
 
-> 主题美化类的网址是 http://localhost:8080/themes
+> 主题美化类的网址是 http://localhost:8080/#/themes
 
-> 音乐欣赏类的网址是 http://localhost:8080/musicandsound
+> 音乐欣赏类的网址是 http://localhost:8080/#/musicandsound
 
-> 游戏娱乐类的网址是 http://localhost:8080/games
+> 游戏娱乐类的网址是 http://localhost:8080/#/games
 
-> 作图/看图类的网址是 http://localhost:8080/photos
+> 作图/看图类的网址是 http://localhost:8080/#/photos
 
-> 社交软件类的网址是 http://localhost:8080/relations
+> 社交软件类的网址是 http://localhost:8080/#/relations
 
-> 实用工具类的网址是 http://localhost:8080/tools
+> 实用工具类的网址是 http://localhost:8080/#/tools
 
-> 视频观看类的网址是 http://localhost:8080/videos
+> 视频观看类的网址是 http://localhost:8080/#/videos
 
-> 其他应用类的网址是 http://localhost:8080/others
+> 其他应用类的网址是 http://localhost:8080/#/others
 
-> 网络应用类的网址是 http://localhost:8080/network
+> 网络应用类的网址是 http://localhost:8080/#/network
 
-> 办公学习类的网址是 http://localhost:8080/office
+> 办公学习类的网址是 http://localhost:8080/#/office
 
-> 阅读写作类的网址是 http://localhost:8080/reading
+> 阅读写作类的网址是 http://localhost:8080/#/reading
 
 
 ## 关于分类问题
