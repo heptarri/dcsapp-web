@@ -84,5 +84,10 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 ### 注：本产品需要配合存储库: https://gitee.com/deepin-community-store/deepin-community-store 使用！
 
+> 本仓库的Gitee地址:  https://gitee.com/deepin-community-store/DCSAPP_WEB
+
+> 本仓库的GitHub地址: https://github.com/z-rx/dcsapp-web
+
+
 #### by Spark Store Development Team.
 

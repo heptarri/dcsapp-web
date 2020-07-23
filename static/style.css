@@ -4,6 +4,7 @@
   overflow: hidden;
   /* overflow-y: scroll; */
   border: transparent;
+  font-family: "Franklin Gothic Medium";
 }
 
 .app {
@@ -20,28 +21,32 @@
 .none-more{
   color:#808080;
 }
+
+/*单个应用模块*/
 .item {
   width: 300px;
   height: 100px;
   float: left;
   transition: all 0.3s;
   margin: 9px;
-  color:#808080;
+  color: #6d6d6d;
 
   border-radius: 20px;
-  background: rgba(128, 128, 128, 0.2);
+  background: rgba(180, 180, 180, 0.2);
 
 }
 .item:hover {
   border-radius: 20px;
   background: rgba(128, 128, 128, 0.15);
 }
+
+/*下载按钮*/
 .download-bt {
   float: right;
   border: 0;
   height: 20px;
   width: 20%;
-  color: #808080;
+  color: #575757;
   transition: all 0.3s;
   position: relative;
   bottom: 0px;
@@ -53,13 +58,15 @@
   /*background: transparent;*/
 
   border-radius: 22px;
-  background: rgba(111, 111, 111, 0.2);
+  background: rgba(170, 170, 170, 0.2);
 
 }
 .download-bt:hover {
-  color: rgba(128, 128, 128, 0.6);
+  background: #d7d7d7;
+  color: rgba(0, 0, 0, 0.9);
 }
 
+/*应用图标*/
 .icon-m {
   float: left;
   width: 26%;

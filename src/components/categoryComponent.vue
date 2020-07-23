@@ -4,13 +4,22 @@
     <br/>
     <center>
       <div class="list">
+
+<!--        单个应用模块-->
         <div class="item" v-for="item in list" :key="item.tip">
           <span class="show">
+
+<!--            应用icon-->
+
             <img :src="`http://dcstore.shenmo.tech/store/${category}/${item.Pkgname}/icon.png`" alt="icon"
                  class="icon-m" @click="GotoJson(item.Pkgname)"/>
             <span class="app-title">
+
+<!--              应用名-->
              <h3 class="app-name">{{item.Name}}</h3>
            </span>
+
+<!--            下载按钮-->
             <a target="_blank">
               <button class="download-bt" :title="downloadContent" @click="GotoJson(item.Pkgname)">
                 详情>>
