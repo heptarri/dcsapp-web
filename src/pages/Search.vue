@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+<!--    搜索功能实现文件-->
+<!--    暂未实现-->
     <br/>
     <br/>
     <input class="search-input" v-model="searchInput" placeholder="搜索您想要的应用" />

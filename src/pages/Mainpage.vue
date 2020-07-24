@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+<!--    主页-->
     <center>
       <br><br>
       <h1 class="title">Spark Store</h1>

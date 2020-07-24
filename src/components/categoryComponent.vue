@@ -38,6 +38,8 @@
 
   export default {
     name: "categoryComponent",
+    //category用来在App.vue中区分类别
+    //category名称就是分类名
     props: ['category'],
     data() {
       return {
@@ -49,6 +51,7 @@
       getInfo() {
         axios
           .get(`http://dcstore.shenmo.tech/store/${this.category}/applist.json`)
+          //applist.json 软件列表
           .then(res => {
             this.list = res.data;
           });
@@ -56,8 +59,10 @@
       GotoJson(pkgn) {
         console.log(
           `http://dcstore.shenmo.tech/store/${this.category}/${pkgn}/app.json`
+          //app.json 软件的详细信息
         );
         window.open(
+          //pkgn 在仓库中的包名
           `http://dcstore.shenmo.tech/store/${this.category}/${pkgn}/app.json`, '_self', ''
         );
       }

@@ -1,5 +1,6 @@
 <template>
   <div>
+<!--    影视类-->
     <categoryComponent category="video"></categoryComponent>
   </div>
 </template>
@@ -24,6 +25,5 @@ export default {
 </script>
 
 
-<style scoped>
-</style>
+
 

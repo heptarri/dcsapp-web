@@ -1,5 +1,6 @@
 <template>
   <div>
+<!--    办公学习应用类-->
     <categoryComponent category="office"></categoryComponent>
   </div>
 </template>
@@ -12,17 +13,7 @@ export default {
   components: {
     categoryComponent
   },
-  data() {
-    return {
-    };
-  },
-  methods: {
-  },
-  mounted() {
-  }
 };
 </script>
 
 
-<style scoped>
-</style>

@@ -1,5 +1,6 @@
 <template>
   <div>
+<!--    阅读分类-->
     <categoryComponent category="reading"></categoryComponent>
   </div>
 </template>
@@ -12,18 +13,8 @@ export default {
   components: {
     categoryComponent
   },
-  data() {
-    return {
-    };
-  },
-  methods: {
-  },
-  mounted() {
-  }
 };
 </script>
 
 
-<style scoped>
-</style>
 

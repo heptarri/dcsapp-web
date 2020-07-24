@@ -1,5 +1,6 @@
 <template>
   <div>
+<!--    聊天交友类-->
     <categoryComponent category="chat"></categoryComponent>
   </div>
 </template>
@@ -12,18 +13,7 @@ export default {
   components: {
     categoryComponent
   },
-  data() {
-    return {
-    };
-  },
-  methods: {
-  },
-  mounted() {
-  }
 };
 </script>
 
-
-<style scoped>
-</style>
 

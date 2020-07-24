@@ -1,5 +1,6 @@
 <template>
   <div>
+<!--    图片处理类-->
     <categoryComponent category="image_graphics"></categoryComponent>
   </div>
 </template>
@@ -12,18 +13,8 @@ export default {
   components: {
     categoryComponent
   },
-  data() {
-    return {
-    };
-  },
-  methods: {
-  },
-  mounted() {
-  }
 };
 </script>
 
 
-<style scoped>
-</style>
 

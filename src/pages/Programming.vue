@@ -1,5 +1,6 @@
 <template>
   <div>
+<!--    编程开发类-->
     <categoryComponent category="development"></categoryComponent>
   </div>
 </template>
@@ -12,18 +13,8 @@ export default {
   components: {
     categoryComponent
   },
-  data() {
-    return {
-    };
-  },
-  methods: {
-  },
-  mounted() {
-  }
 };
 </script>
 
 
-<style scoped>
-</style>
 

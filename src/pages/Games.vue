@@ -1,5 +1,6 @@
 <template>
   <div>
+<!--    游戏分类-->
     <categoryComponent category="games"></categoryComponent>
   </div>
 </template>
@@ -12,17 +13,7 @@ export default {
   components: {
     categoryComponent
   },
-  data() {
-    return {
-    };
-  },
-  methods: {
-  },
-  mounted() {
-  }
+
 };
 </script>
 
-
-<style scoped>
-</style>
