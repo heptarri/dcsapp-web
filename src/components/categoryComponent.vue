@@ -10,7 +10,6 @@
           <span class="show">
 
 <!--            应用icon-->
-
             <img :src="`http://dcstore.shenmo.tech/store/${category}/${item.Pkgname}/icon.png`" alt="icon"
                  class="icon-m" @click="GotoJson(item.Pkgname)"/>
             <span class="app-title">
