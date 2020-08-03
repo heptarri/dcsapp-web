@@ -7,11 +7,14 @@
     <input class="search-input" v-model="searchInput" placeholder="搜索您想要的应用" />
     <button class="search-button" @click="search">搜索</button>
 
+
+
+
   </div>
 </template>
 
 <script>
-  import axios from "axios";
+
 
   export default {
     name: "Search",
@@ -23,17 +26,15 @@
       };
     },
     methods: {
-      search() {
-        var keywords = this.searchInput.split(" ");
+      search:function() {
 
-      },
-      getJsonList() {
-        return []
       }
     },
     mounted() {
-      // this.getInfo();
-    }
+
+    },
+
+
   };
 </script>
 

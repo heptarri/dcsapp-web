@@ -15,7 +15,7 @@
           应用问题反馈: http://www.shenmo.tech:420/?p=419
           APP建议: http://www.shenmo.tech:420/?p=422
       -->
-        <button @click="Search" class="bt-feedback" disabled>搜索应用(暂未开放)</button>
+        <button @click="Search" class="bt-feedback" >搜索应用(暂未开放)</button>
         <br>
         <button @click="Dream" class="bt-feedback">愿望墙</button>
         <br>

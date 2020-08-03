@@ -50,7 +50,8 @@
     methods: {
       getInfo() {
         axios
-          .get(`http://dcstore.shenmo.tech/store/${this.category}/applist.json`)
+          //39.106.2.2:38324
+          .get(`http://img.shenmo.tech:38324/store/${this.category}/applist.json`)
           //applist.json 软件列表
           .then(res => {
             this.list = res.data;
@@ -58,12 +59,12 @@
       },
       GotoJson(pkgn) {
         console.log(
-          `http://dcstore.shenmo.tech/store/${this.category}/${pkgn}/app.json`
+          `http://img.shenmo.tech:38324/store/${this.category}/${pkgn}/app.json`
           //app.json 软件的详细信息
         );
         window.open(
           //pkgn 在仓库中的包名
-          `http://dcstore.shenmo.tech/store/${this.category}/${pkgn}/app.json`, '_self', ''
+          `http://img.shenmo.tech:38324/store/${this.category}/${pkgn}/app.json`, '_self', ''
         );
       }
     },
