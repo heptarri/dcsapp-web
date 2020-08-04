@@ -63,7 +63,7 @@
   width: 310px;
   height: 105px;
   float:left;
-  filter: blur(50px) opacity(0%);
+  filter: blur(30px) opacity(5%);
   position: relative;
   top:-100px;
 

@@ -20,7 +20,7 @@
   padding-left: 10px;
   /*padding: 90%;*/
   margin: 0 auto;
-  background: #555555;
+  background: #252525;
 }
 .none-more{
   color: #d2d2d2;
@@ -36,23 +36,23 @@
   color: #dcdcdc;
 
   border-radius: 32px;
-  background: linear-gradient(145deg, #4d4d4d, #5b5b5b);
-  box-shadow:  8px 8px 16px #484848,
-  -8px -8px 16px #626262;
+  background: linear-gradient(145deg, #212121, #282828);
+  box-shadow:  11px 11px 22px #1c1c1c,
+  -11px -11px 22px #2e2e2e;
 
   overflow: hidden;
 }
 .item:hover {
   border-radius: 32px;
-  background: linear-gradient(145deg, #4d4d4d, #5b5b5b);
-  box-shadow:  22px 22px 44px #484848,
-  -22px -22px 44px #626262;
+  background: linear-gradient(145deg, #212121, #282828);
+  box-shadow:  39px 39px 78px #1c1c1c,
+  -39px -39px 78px #2e2e2e;
 }
 .item:active{
   border-radius: 32px;
-  background: linear-gradient(145deg, #4d4d4d, #5b5b5b);
-  box-shadow:  8px 8px 16px #484848,
-  -8px -8px 16px #626262;
+  background: linear-gradient(145deg, #212121, #282828);
+  box-shadow:  11px 11px 22px #1c1c1c,
+  -11px -11px 22px #2e2e2e;
 }
 .show{
   overflow: hidden;
@@ -62,13 +62,13 @@
   width: 310px;
   height: 105px;
   float:left;
-  filter: blur(50px) opacity(0%);
+  filter: blur(50px) opacity(5%);
   position: relative;
   top:-100px;
   transition: all 0.3s;
 }
 .icon-bg:hover{
-  filter: blur(50px) opacity(40%);
+  filter: blur(30px) opacity(20%);
 }
 
 /*应用图标*/
