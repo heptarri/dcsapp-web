@@ -14,7 +14,7 @@
                  class="icon-m" @click="GotoJson(item.Pkgname)"/>
             <span class="app-title">
 <!--              应用名-->
-             <h3 class="app-name">{{item.Name}}</h3>
+             <h3 class="app-name" :title="`${item.Name}`">{{item.Name}}</h3>
            </span>
 
 

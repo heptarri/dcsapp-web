@@ -71,10 +71,13 @@
   max-width: 1500px;
   text-align: center;
 }
-.app-title{
-  font-weight: lighter;
-}
 .app-name{
   font-weight: lighter;
   margin: 30px;
+
+  display:block;
+  overflow:hidden;
+  word-break:keep-all;
+  white-space:nowrap;
+  text-overflow:ellipsis;
 }
