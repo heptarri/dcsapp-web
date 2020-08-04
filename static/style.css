@@ -6,6 +6,9 @@
   border: transparent;
   font-family: "Franklin Gothic Medium";
 }
+::selection{
+  background: #d2f0ff;
+}
 
 .app {
   /* height: 200px; */
@@ -31,40 +34,20 @@
   margin: 9px;
   color: #6d6d6d;
 
-  border-radius: 20px;
-  background: rgba(180, 180, 180, 0.2);
+  border-radius: 32px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow:  29px 29px 58px #d4d4d4,
+  -29px -29px 58px #ffffff;
 
 }
 .item:hover {
-  border-radius: 20px;
-  background: rgba(128, 128, 128, 0.15);
+  border-radius: 32px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow:  5px 5px 10px #d4d4d4,
+  -5px -5px 10px #ffffff;
 }
 
-/*下载按钮*/
-.download-bt {
-  float: right;
-  border: 0;
-  height: 20px;
-  width: 20%;
-  color: #575757;
-  transition: all 0.3s;
-  position: relative;
-  bottom: 0px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  line-height: 20px;
-  margin: 20px;
-  /*background: transparent;*/
 
-  border-radius: 22px;
-  background: rgba(170, 170, 170, 0.2);
-
-}
-.download-bt:hover {
-  background: #d7d7d7;
-  color: rgba(0, 0, 0, 0.9);
-}
 
 /*应用图标*/
 .icon-m {
