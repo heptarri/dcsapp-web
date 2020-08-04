@@ -4,7 +4,8 @@
   overflow: hidden;
   /* overflow-y: scroll; */
   border: transparent;
-  font-family: "Franklin Gothic Medium";
+  /*font-family: "Franklin Gothic Medium";*/
+  color:#414D68;
 }
 ::selection{
   background: #d2f0ff;
@@ -30,20 +31,27 @@
   width: 300px;
   height: 100px;
   float: left;
-  transition: all 0.3s;
-  margin: 9px;
+  transition: all 0.25s;
+  margin: 15px;
   color: #6d6d6d;
+
+
 
   border-radius: 32px;
   background: linear-gradient(145deg, #e6e6e6, #ffffff);
-  box-shadow:  29px 29px 58px #d4d4d4,
-  -29px -29px 58px #ffffff;
-
+  box-shadow:  5px 5px 10px #e0e0e0,
+  -5px -5px 10px #ffffff;
 }
 .item:hover {
   border-radius: 32px;
   background: linear-gradient(145deg, #e6e6e6, #ffffff);
-  box-shadow:  5px 5px 10px #d4d4d4,
+  box-shadow:  29px 29px 58px #e0e0e0,
+  -29px -29px 58px #ffffff;
+}
+.item:active{
+  border-radius: 32px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow:  5px 5px 10px #e0e0e0,
   -5px -5px 10px #ffffff;
 }
 
@@ -64,17 +72,9 @@
   text-align: center;
 }
 .app-title{
-  height: 40px;
-  width: 160px;
-  float: left;
-  position: relative;
-  left:-20px;
-  margin: 0;
+  font-weight: lighter;
 }
 .app-name{
-  font-size: 20px;
   font-weight: lighter;
-  text-overflow: ellipsis;
-  line-height: 19px;
-  margin: 20px;
+  margin: 30px;
 }

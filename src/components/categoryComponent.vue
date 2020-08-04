@@ -13,7 +13,6 @@
             <img :src="`http://img.shenmo.tech:38324/store/${category}/${item.Pkgname}/icon.png`" alt="icon"
                  class="icon-m" @click="GotoJson(item.Pkgname)"/>
             <span class="app-title">
-
 <!--              应用名-->
              <h3 class="app-name">{{item.Name}}</h3>
            </span>
@@ -28,7 +27,6 @@
 
 <script>
   import axios from "axios";
-  import Vue from "vue";
 
   export default {
     name: "categoryComponent",
