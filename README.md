@@ -29,6 +29,8 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 假设服务器网址为 http://localhost:8080/
 
+#### LIGHTMOD:
+
 > 主页的网址为 http://localhost:8080/#/
 
 > 编程开发类的网址是 http://localhost:8080/#/programming
@@ -54,6 +56,35 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 > 办公学习类的网址是 http://localhost:8080/#/office
 
 > 阅读写作类的网址是 http://localhost:8080/#/reading
+
+#### DARKMOD:
+> 主页的网址为 http://localhost:8080/#/dark
+
+> 编程开发类的网址是 http://localhost:8080/#/darkprogramming
+
+> 主题美化类的网址是 http://localhost:8080/#/darkthemes
+
+> 音乐欣赏类的网址是 http://localhost:8080/#/darkmusicandsound
+
+> 游戏娱乐类的网址是 http://localhost:8080/#/darkgames
+
+> 作图/看图类的网址是 http://localhost:8080/#/darkphotos
+
+> 社交软件类的网址是 http://localhost:8080/#/darkrelations
+
+> 实用工具类的网址是 http://localhost:8080/#/darktools
+
+> 视频观看类的网址是 http://localhost:8080/#/darkvideos
+
+> 其他应用类的网址是 http://localhost:8080/#/darkothers
+
+> 网络应用类的网址是 http://localhost:8080/#/darknetwork
+
+> 办公学习类的网址是 http://localhost:8080/#/darkoffice
+
+> 阅读写作类的网址是 http://localhost:8080/#/darkreading
+
+
 
 
 ## 关于分类问题

@@ -5,12 +5,12 @@
   /* overflow-y: scroll; */
   border: transparent;
   /*font-family: "Franklin Gothic Medium";*/
-  color:#414D68;
+  color: #c4c4c4;
+
 }
 ::selection{
-  background: #d2f0ff;
+  background: #5e676d;
 }
-
 .app {
   /* height: 200px; */
   width: 100%;
@@ -20,10 +20,10 @@
   padding-left: 10px;
   /*padding: 90%;*/
   margin: 0 auto;
-  background: transparent;
+  background: #555555;
 }
 .none-more{
-  color:#808080;
+  color: #d2d2d2;
 }
 
 /*单个应用模块*/
@@ -33,27 +33,26 @@
   float: left;
   transition: all 0.25s;
   margin: 15px;
-  color: #6d6d6d;
+  color: #dcdcdc;
 
   border-radius: 32px;
-  background: linear-gradient(145deg, #e6e6e6, #ffffff);
-  box-shadow:  5px 5px 10px #e0e0e0,
-  -5px -5px 10px #ffffff;
+  background: linear-gradient(145deg, #4d4d4d, #5b5b5b);
+  box-shadow:  8px 8px 16px #484848,
+  -8px -8px 16px #626262;
 
   overflow: hidden;
 }
 .item:hover {
   border-radius: 32px;
-  background: linear-gradient(145deg, #e6e6e6, #ffffff);
-  box-shadow:  29px 29px 58px #e0e0e0,
-  -29px -29px 58px #ffffff;
-  overflow:hidden;
+  background: linear-gradient(145deg, #4d4d4d, #5b5b5b);
+  box-shadow:  22px 22px 44px #484848,
+  -22px -22px 44px #626262;
 }
 .item:active{
   border-radius: 32px;
-  background: linear-gradient(145deg, #e6e6e6, #ffffff);
-  box-shadow:  5px 5px 10px #e0e0e0,
-  -5px -5px 10px #ffffff;
+  background: linear-gradient(145deg, #4d4d4d, #5b5b5b);
+  box-shadow:  8px 8px 16px #484848,
+  -8px -8px 16px #626262;
 }
 .show{
   overflow: hidden;
@@ -66,13 +65,11 @@
   filter: blur(50px) opacity(0%);
   position: relative;
   top:-100px;
-
   transition: all 0.3s;
 }
 .icon-bg:hover{
   filter: blur(50px) opacity(40%);
 }
-
 
 /*应用图标*/
 .icon-m {

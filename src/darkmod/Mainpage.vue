@@ -1,0 +1,92 @@
+<template>
+  <div id="app">
+<!--    主页-->
+    <center>
+      <br><br>
+      <h1 class="title">Spark Store</h1>
+      <h3 class="more-info">
+        Have more.
+      </h3>
+      <div class="buttons">
+
+
+        <!--
+          愿望墙: http://www.shenmo.tech:420/?p=91
+          应用问题反馈: http://www.shenmo.tech:420/?p=419
+          APP建议: http://www.shenmo.tech:420/?p=422
+      -->
+        <button @click="Search" class="bt-feedback" disabled>搜索应用(暂未开放)</button>
+        <br>
+        <button @click="Dream" class="bt-feedback">愿望墙</button>
+        <br>
+        <button @click="FeedBack" class="bt-feedback">问题反馈</button>
+        <br>
+        <button @click="Proposal" class="bt-feedback">APP建议</button>
+        <br>
+      </div>
+    </center>
+  </div>
+
+</template>
+
+<script>
+  export default {
+    name: 'darkMainpage',
+    data() {
+      return {}
+    },
+    methods: {
+      Dream: function () {
+        window.open("http://www.shenmo.tech:420/?p=91", "_self", "")
+      },
+      FeedBack: function () {
+        window.open("http://www.shenmo.tech:420/?p=419", "_self", "")
+      },
+      Proposal: function () {
+        window.open("http://www.shenmo.tech:420/?p=422", "_self", "")
+      },
+      Search: function () {
+        this.$router.push({name: "Search"})
+      }
+    }
+  }
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+  #app {
+    height: 700px;
+    overflow: hidden;
+    border: transparent;
+    font-family: Bahnschrift;
+    background: #555555;
+    padding-bottom: 15%;
+  }
+  .more-info {
+    color: #d0d0d0;
+    font-weight: lighter;
+  }
+  .title{
+    color: #bababa;
+  }
+  .bt-feedback {
+    width: 300px;
+    padding: 10px;
+    /*margin-top: 40px;*/
+    border: transparent;
+    background: #7f7f7f;
+    transition: all 0.2s;
+    color: #adabab;
+  }
+
+  .bt-feedback:hover {
+    background: #727272;
+  }
+
+  .buttons {
+    margin-top: 100px;
+  }
+
+
+</style>
+

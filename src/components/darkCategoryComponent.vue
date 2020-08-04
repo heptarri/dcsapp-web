@@ -71,5 +71,5 @@
 
 
 <style scoped>
-  @import "../../static/style.css";
+  @import "../../static/dark.css";
 </style>
