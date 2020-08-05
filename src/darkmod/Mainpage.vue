@@ -8,21 +8,16 @@
         Have more.
       </h3>
       <div class="buttons">
-
-
         <!--
           愿望墙: http://www.shenmo.tech:420/?p=91
           应用问题反馈: http://www.shenmo.tech:420/?p=419
           APP建议: http://www.shenmo.tech:420/?p=422
       -->
+        <br><br>
         <button @click="Search" class="bt-feedback" disabled>搜索应用(暂未开放)</button>
-        <br>
         <button @click="Dream" class="bt-feedback">愿望墙</button>
-        <br>
         <button @click="FeedBack" class="bt-feedback">问题反馈</button>
-        <br>
         <button @click="Proposal" class="bt-feedback">APP建议</button>
-        <br>
       </div>
     </center>
   </div>
@@ -59,32 +54,44 @@
     overflow: hidden;
     border: transparent;
     font-family: Bahnschrift;
-    background: #555555;
+    background: #252525;
     padding-bottom: 15%;
+  }
+  ::selection{
+    background: #6d7884;
   }
   .more-info {
     color: #d0d0d0;
     font-weight: lighter;
+    font-size: 30px;
   }
   .title{
     color: #bababa;
+    font-size: 80px;
   }
   .bt-feedback {
-    width: 300px;
     padding: 10px;
     /*margin-top: 40px;*/
-    border: transparent;
-    background: #7f7f7f;
+    border: 0;
+    background: #252525;
     transition: all 0.2s;
-    color: #adabab;
+    color: #ffffff;
+    width: 150px;
   }
 
   .bt-feedback:hover {
-    background: #727272;
+    background: linear-gradient(145deg, #212121, #282828);
+    box-shadow:  14px 14px 33px #1b1b1b,
+    -14px -14px 33px #2f2f2f;
   }
 
   .buttons {
-    margin-top: 100px;
+    height: 150px;
+    width: 400px;
+    position: relative;
+    top:100px;
+    border:solid 1px #848484;
+    border-radius: 10px;
   }
 
 
