@@ -7,7 +7,7 @@
       <div class="list">
 
         <!--        单个应用模块-->
-        <div class="item" v-for="item in list" :key="item.tip">
+        <div class="item" v-for="item in list" :key="item.tip" @click="GotoJson(item.Pkgname)">
           <div class="infos" v-if="showw">
           </div>
           <span class="show">
