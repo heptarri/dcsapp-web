@@ -190,7 +190,7 @@
 }
 
 .icon-bg:hover {
-  filter: blur(30px) opacity(10%);
+  filter: blur(20px) opacity(20%);
 }
 
 /*应用图标*/
@@ -227,3 +227,4 @@
 
   float: left;
 }
+

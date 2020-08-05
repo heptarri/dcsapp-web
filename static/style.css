@@ -190,7 +190,7 @@
 }
 
 .icon-bg:hover {
-  filter: blur(30px) opacity(10%);
+  filter: blur(20px) opacity(10%);
 }
 
 /*应用图标*/
@@ -202,10 +202,10 @@
 
 
 .item:hover {
-  border-radius: 100px;
+  border-radius: 102px;
   background: linear-gradient(145deg, #e6e6e6, #ffffff);
-  box-shadow:  50px 50px 100px #c4c4c4,
-  -50px -50px 100px #ffffff;
+  box-shadow:  18px 18px 36px #e6e6e6,
+  -18px -18px 36px #ffffff;
 }
 
 .item:active {

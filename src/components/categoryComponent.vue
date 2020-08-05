@@ -19,8 +19,8 @@
            </span>
           </span>
 
-         <img :src="`http://img.shenmo.tech:38324/store/${category}/${item.Pkgname}/icon.png`" alt="icon"
-              class="icon-bg" @click="GotoJson(item.Pkgname)"/>
+<!--         <img :src="`http://img.shenmo.tech:38324/store/${category}/${item.Pkgname}/icon.png`" alt="icon"-->
+<!--              class="icon-bg" @click="GotoJson(item.Pkgname)"/>-->
         </div>
       </div>
     </center>
