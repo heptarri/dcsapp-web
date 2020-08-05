@@ -7,8 +7,9 @@
       <div class="list">
 
         <!--        单个应用模块-->
-        <div class="item" v-for="item in list" :key="item.tip" @click="GotoJson(item.Pkgname)">
-
+        <div class="item" v-for="item in list" :key="item.tip">
+          <div class="infos" v-if="showw">
+          </div>
           <span class="show">
 <!--            应用icon-->
             <img :src="`http://img.shenmo.tech:38324/store/${category}/${item.Pkgname}/icon.png`" alt="icon"
@@ -18,16 +19,14 @@
              <h3 class="app-name" :title="`${item.Name}`">{{item.Name}}</h3>
            </span>
           </span>
-<!--
+
           <img :src="`http://img.shenmo.tech:38324/store/${category}/${item.Pkgname}/icon.png`" alt="icon"
                class="icon-bg" @click="GotoJson(item.Pkgname)"/>
--->
         </div>
       </div>
     </center>
   </div>
 </template>
-
 <script>
   import axios from "axios";
 
@@ -61,7 +60,7 @@
           //pkgn 在仓库中的包名
           `http://img.shenmo.tech:38324/store/${this.category}/${pkgn}/app.json`, '_self', ''
         );
-      }
+      },
     },
     mounted() {
       this.getInfo();
