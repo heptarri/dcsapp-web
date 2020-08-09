@@ -8,223 +8,100 @@
   color: #c4c4c4;
 
 }
-
-::selection {
+::selection{
   background: #5e676d;
 }
-
 .app {
   /* height: 200px; */
   width: 100%;
   overflow: hidden;
   /* border: transparent; */
-
   padding-bottom: 50px;
   padding-left: 10px;
-
   /*padding: 90%;*/
   margin: 0 auto;
   background: #252525;
 }
-
-.none-more {
+.none-more{
   color: #d2d2d2;
 }
 
-@media screen and (min-width: 1590px) {
-  /*单个应用模块*/
-  .item {
-    width: 20%;
-    height: 50px;
-    float: left;
-    transition: all 0.2s;
-    margin: 15px;
-    color: #dcdcdc;
-    overflow: hidden;
-    border-radius: 100px;
-  }
-  .icon-m {
-    float: left;
-    width: 13%;
-    height: 77%;
-    background: transparent;
-    margin: 10px;
-    border-radius: 10px;
-    transition: all 0.2s;
-    position: relative;
-    top: -4px;
-  }
-  .list {
-    max-width: 1500px;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 1300px) and (max-width: 1590px) {
-  /*单个应用模块*/
-  .item {
-    width: 20%;
-    height: 50px;
-    float: left;
-    transition: all 0.2s;
-    margin: 15px;
-    color: #dcdcdc;
-    overflow: hidden;
-    border-radius: 100px;
-  }
+/*单个应用模块*/
+.item {
+  width: 300px;
+  height: 100px;
+  float: left;
+  transition: all 0.25s;
+  margin: 15px;
+  color: #dcdcdc;
 
-  .icon-m {
-    float: left;
-    width: 13%;
-    height: 77%;
-    background: transparent;
-    margin: 10px;
-    border-radius: 10px;
-    transition: all 0.2s;
-    position: relative;
-    top: -4px;
-  }
-  .list {
-    max-width: 1000px;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 1512px) and (min-width: 980px) {
-  .item {
-    width: 30%;
-    height: 50px;
-    float: left;
-    transition: all 0.2s;
-    margin: 15px;
-    color: #dcdcdc;
-    overflow: hidden;
-    border-radius: 100px;
-  }
+  border-radius: 32px;
+  background: linear-gradient(145deg, #212121, #282828);
+  box-shadow:  11px 11px 22px #1c1c1c,
+  -11px -11px 22px #2e2e2e;
 
-  .icon-m {
-    float: left;
-    width: 40px;
-    height: 77%;
-    background: transparent;
-    margin: 10px;
-    border-radius: 10px;
-    transition: all 0.2s;
-    position: relative;
-    top: -4px;
-  }
-
-  .list {
-    max-width: 1000px;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .item {
-    width: 45%;
-    height: 50px;
-    float: left;
-    transition: all 0.2s;
-    margin: 15px;
-    color: #dcdcdc;
-    overflow: hidden;
-    border-radius: 100px;
-  }
-
-  .icon-m {
-    float: left;
-    width: 40px;
-    height: 77%;
-    background: transparent;
-    margin: 10px;
-    border-radius: 10px;
-    transition: all 0.2s;
-    position: relative;
-    top: -4px;
-  }
-
-  .list {
-    max-width: 1000px;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 750px) {
-  .item {
-    width: 70%;
-    height: 50px;
-    float: left;
-    transition: all 0.2s;
-    margin: 15px;
-    color: #dcdcdc;
-    overflow: hidden;
-    border-radius: 100px;
-  }
-
-  .icon-m {
-    float: left;
-    width: 40px;
-    height: 77%;
-    background: transparent;
-    margin: 10px;
-    border-radius: 10px;
-    transition: all 0.2s;
-    position: relative;
-    top: -4px;
-  }
-
-  .list {
-    max-width: 1000px;
-    text-align: center;
-  }
-}
-
-.show {
   overflow: hidden;
 }
-.icon-bg {
+.item:hover {
+  border-radius: 32px;
+  background: linear-gradient(145deg, #212121, #282828);
+  box-shadow:  39px 39px 78px #1c1c1c,
+  -39px -39px 78px #2e2e2e;
+}
+.item:active{
+  border-radius: 32px;
+  background: linear-gradient(145deg, #212121, #282828);
+  box-shadow:  11px 11px 22px #1c1c1c,
+  -11px -11px 22px #2e2e2e;
+}
+.show{
+  overflow: hidden;
+}
+
+.icon-bg{
   width: 310px;
   height: 105px;
-  float: left;
-  filter: blur(30px) opacity(0%);
+  float:left;
+  filter: blur(50px) opacity(5%);
   position: relative;
-  top: -100px;
+  top:-100px;
   transition: all 0.3s;
 }
-
-.icon-bg:hover {
-  filter: blur(20px) opacity(20%);
+.icon-bg:hover{
+  filter: blur(30px) opacity(20%);
+}
+.item:hover {
+  transform: scale(1.0120);
 }
 
+.icon-m:hover {
+  transform: rotate(666turn);
+  transition-delay: 1s;
+  transition-property: all;
+  transition-duration: 59s;
+  transition-timing-function: cubic-bezier(.34,0,.84,1);
+}
 /*应用图标*/
-
+.icon-m {
+  float: left;
+  width: 26%;
+  height: 77%;
+  background: transparent;
+  margin: 10px;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
 .list {
   max-width: 1500px;
   text-align: center;
 }
-
-
-.item:hover {
-  border-radius: 100px;
-  background: linear-gradient(145deg, #212121, #282828);
-  box-shadow: 47px 47px 94px #191919,
-  -47px -47px 94px #313131;
-}
-
-.item:active {
-  border-radius: 100px;
-  background: linear-gradient(145deg, #212121, #282828);
-  box-shadow: 5px 5px 10px #1b1b1b,
-  -5px -5px 10px #2f2f2f;
-}
-.app-name {
+.app-name{
   font-weight: lighter;
-  position: relative;
-  top: -5px;
+  margin: 30px;
 
-  display: block;
-  overflow: hidden;
-  word-break: keep-all;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-
-  float: left;
+  display:block;
+  overflow:hidden;
+  word-break:keep-all;
+  white-space:nowrap;
+  text-overflow:ellipsis;
 }
-
