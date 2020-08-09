@@ -76,14 +76,22 @@
   .bt-feedback {
     width: 300px;
     padding: 10px;
+    margin: 15px;
     /*margin-top: 40px;*/
     border: transparent;
-    background: #f3f3f3;
-    transition: all 0.2s;
+    background: #F4F4F6;
+    transition: all 0.25s;
+    border-radius: 18px;
+    color: #6d6d6d;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
   }
 
   .bt-feedback:hover {
-    background: #e8e8e8;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    -webkit-transform: scale(1.07, 1.07);
+    transform: scale(1.07, 1.07);
   }
 
   .buttons {

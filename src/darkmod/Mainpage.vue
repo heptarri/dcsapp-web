@@ -67,7 +67,7 @@
     overflow: hidden;
     border: transparent;
     font-family: Bahnschrift;
-    background: #555555;
+    background: #252525;
     padding-bottom: 15%;
   }
   .more-info {
@@ -80,15 +80,22 @@
   .bt-feedback {
     width: 300px;
     padding: 10px;
+    margin: 15px;
     /*margin-top: 40px;*/
     border: transparent;
-    background: #7f7f7f;
-    transition: all 0.2s;
-    color: #adabab;
+    background: #333333;
+    transition: all 0.25s;
+    border-radius: 18px;
+    color: #dcdcdc;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
   }
 
   .bt-feedback:hover {
-    background: #727272;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    -webkit-transform: scale(1.07, 1.07);
+    transform: scale(1.07, 1.07);
   }
 
   .buttons {
