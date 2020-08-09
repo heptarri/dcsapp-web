@@ -14,8 +14,13 @@
           愿望墙: http://www.shenmo.tech:420/?p=91
           应用问题反馈: http://www.shenmo.tech:420/?p=419
           APP建议: http://www.shenmo.tech:420/?p=422
+          国际排名：http://distrowatch.com/table.php?distribution=deepin
       -->
+        <!--
         <button @click="Search" class="bt-feedback" disabled>搜索应用(暂未开放)</button>
+        <br>
+        -->
+        <button @click="distrowatch" class="bt-feedback"><b>Deepin国际排名</b></button>
         <br>
         <button @click="Dream" class="bt-feedback">愿望墙</button>
         <br>
@@ -44,6 +49,9 @@
       },
       Proposal: function () {
         window.open("http://www.shenmo.tech:420/?p=422", "_self", "")
+      },
+      distrowatch: function () {
+        window.open("https://distrowatch.com/table.php?distribution=deepin", "_self", "")
       },
       Search: function () {
         this.$router.push({name: "Search"})
