@@ -7,7 +7,7 @@
       <div class="list">
 
         <!--        单个应用模块-->
-        <div class="item" v-for="item in list" :key="item.tip" @click="GotoJson(item.Pkgname)" >
+        <div class="item" v-for="item in list" :key="item.tip" @click="GotoJson(item.Pkgname)">
 
           <span class="show">
 <!--            应用icon-->
@@ -15,12 +15,18 @@
                  class="icon-m" @click="GotoJson(item.Pkgname)"/>
             <span class="app-title">
 <!--              应用名-->
+            <div>
              <h3 class="app-name" :title="`${item.Name}`">{{item.Name}}</h3>
+             </div>
+            <div>
+             <h4 class="app-more" :title="`${item.More}`">{{item.More}}</h4>
+            </div>
            </span>
           </span>
-
-<!--         <img :src="`http://img.shenmo.tech:38324/store/${category}/${item.Pkgname}/icon.png`" alt="icon"-->
-<!--              class="icon-bg" @click="GotoJson(item.Pkgname)"/>-->
+<!--
+          <img :src="`http://img.shenmo.tech:38324/store/${category}/${item.Pkgname}/icon.png`" alt="icon"
+               class="icon-bg" @click="GotoJson(item.Pkgname)"/>
+-->
         </div>
       </div>
     </center>

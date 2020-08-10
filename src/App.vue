@@ -58,7 +58,6 @@ a {
     background: #e3e3e3;
   }
    */
-
 .right {
   border: 0;
   padding: 0;

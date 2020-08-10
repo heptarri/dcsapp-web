@@ -8,16 +8,26 @@
         Have more.
       </h3>
       <div class="buttons">
+
+
         <!--
           愿望墙: http://www.shenmo.tech:420/?p=91
           应用问题反馈: http://www.shenmo.tech:420/?p=419
           APP建议: http://www.shenmo.tech:420/?p=422
+          国际排名：http://distrowatch.com/table.php?distribution=deepin
       -->
-        <br><br>
+        <!--
         <button @click="Search" class="bt-feedback" disabled>搜索应用(暂未开放)</button>
+        <br>
+        -->
+        <button @click="distrowatch" class="bt-feedback"><b>Deepin国际排名</b></button>
+        <br>
         <button @click="Dream" class="bt-feedback">愿望墙</button>
+        <br>
         <button @click="FeedBack" class="bt-feedback">问题反馈</button>
+        <br>
         <button @click="Proposal" class="bt-feedback">APP建议</button>
+        <br>
       </div>
     </center>
   </div>
@@ -40,6 +50,9 @@
       Proposal: function () {
         window.open("http://www.shenmo.tech:420/?p=422", "_self", "")
       },
+      distrowatch: function () {
+        window.open("https://distrowatch.com/table.php?distribution=deepin", "_self", "")
+      },
       Search: function () {
         this.$router.push({name: "Search"})
       }
@@ -57,41 +70,36 @@
     background: #252525;
     padding-bottom: 15%;
   }
-  ::selection{
-    background: #6d7884;
-  }
   .more-info {
     color: #d0d0d0;
     font-weight: lighter;
-    font-size: 30px;
   }
   .title{
     color: #bababa;
-    font-size: 80px;
   }
   .bt-feedback {
+    width: 300px;
     padding: 10px;
+    margin: 15px;
     /*margin-top: 40px;*/
-    border: 0;
-    background: #252525;
-    transition: all 0.2s;
-    color: #ffffff;
-    width: 150px;
+    border: transparent;
+    background: #333333;
+    transition: all 0.25s;
+    border-radius: 18px;
+    color: #dcdcdc;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
   }
 
   .bt-feedback:hover {
-    background: linear-gradient(145deg, #212121, #282828);
-    box-shadow:  14px 14px 33px #1b1b1b,
-    -14px -14px 33px #2f2f2f;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    -webkit-transform: scale(1.07, 1.07);
+    transform: scale(1.07, 1.07);
   }
 
   .buttons {
-    height: 150px;
-    width: 400px;
-    position: relative;
-    top:100px;
-    border:solid 1px #848484;
-    border-radius: 10px;
+    margin-top: 100px;
   }
 
 
