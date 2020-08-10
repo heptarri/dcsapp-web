@@ -87,14 +87,16 @@
   text-align: center;
 }
 .app-name{
+
   text-align: left;
-  font-weight: block;
+  font-weight: lighter;
   display:block;
   overflow:hidden;
   word-break:keep-all;
   white-space:nowrap;
   text-overflow:ellipsis;
   color: #494949;
+  padding-right: 10px;
 }
 .app-more{
   text-align: left;
@@ -106,5 +108,6 @@
   white-space:nowrap;
   text-overflow:ellipsis;
   color: #808080;
+  padding-right: 10px;
 }
 
