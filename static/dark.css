@@ -87,12 +87,23 @@
   text-align: center;
 }
 .app-name{
-  font-weight: lighter;
-  margin: 30px;
-
+  text-align: left;
+  font-weight: block;
   display:block;
   overflow:hidden;
   word-break:keep-all;
   white-space:nowrap;
   text-overflow:ellipsis;
+  color: #FFFFFF;
+}
+.app-more{
+  text-align: left;
+  font-size:10px;
+  font-weight: lighter;
+  display:block;
+  overflow:hidden;
+  word-break:keep-all;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  color: #999999;
 }
