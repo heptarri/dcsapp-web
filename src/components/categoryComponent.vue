@@ -52,7 +52,7 @@ export default {
             list: [],
             downloadContent: "DOWNLOAD",
             source: "https://store1.jerrywang.top",
-            imgSource: "http://cdn.jerrywang.top",
+            imgSource: "https://deepin-community-store.gitee.io",
         };
     },
     methods: {
