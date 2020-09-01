@@ -22,11 +22,9 @@
         -->
         <button @click="distrowatch" class="bt-feedback"><b>Deepin国际排名</b></button>
         <br>
-        <button @click="Dream" class="bt-feedback">愿望墙</button>
+        <button @click="officialwebsite" class="bt-feedback">商店官网</button>
         <br>
-        <button @click="FeedBack" class="bt-feedback">问题反馈</button>
-        <br>
-        <button @click="Proposal" class="bt-feedback">APP建议</button>
+        <button @click="FeedBack" class="bt-feedback">反馈中心</button>
         <br>
       </div>
     </center>
@@ -41,14 +39,11 @@
       return {}
     },
     methods: {
-      Dream: function () {
-        window.open("http://www.shenmo.tech:420/?p=91", "_self", "")
-      },
       FeedBack: function () {
-        window.open("http://www.shenmo.tech:420/?p=419", "_self", "")
+        window.open("https://www.deepinos.org/t/spark-feedback", "_self", "")
       },
-      Proposal: function () {
-        window.open("http://www.shenmo.tech:420/?p=422", "_self", "")
+      officialwebsite: function () {
+        window.open(" https://www.spark-app.store/", "_self", "")
       },
       distrowatch: function () {
         window.open("https://distrowatch.com/table.php?distribution=deepin", "_self", "")
