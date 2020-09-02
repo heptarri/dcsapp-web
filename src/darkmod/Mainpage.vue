@@ -24,7 +24,9 @@
         <br>
         <button @click="officialwebsite" class="bt-feedback">商店官网</button>
         <br>
-        <button @click="FeedBack" class="bt-feedback">反馈中心</button>
+        <button @click="FeedBack" class="bt-feedback">反馈中心(社区)</button>
+        <br>
+        <button @click="GiteeFeedBack" class="bt-feedback">反馈中心(Gitee)</button>
         <br>
       </div>
     </center>
@@ -47,6 +49,9 @@
       },
       distrowatch: function () {
         window.open("https://distrowatch.com/table.php?distribution=deepin", "_self", "")
+      },
+      GiteeFeedBack: function () {
+        window.open("https://gitee.com/deepin-community-store/feedback", "_self", "")
       },
       Search: function () {
         this.$router.push({name: "Search"})
