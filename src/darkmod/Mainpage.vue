@@ -26,6 +26,10 @@
         <br>
         <button @click="GiteeFeedBack" class="bt-feedback">反馈中心</button>
         <br>
+        <button @click="Contri" class="bt-feedback">参与贡献</button>
+        <br>
+        <button @click="Donate" class="bt-feedback">随喜捐赠</button>
+        <br>
       </div>
     </center>
   </div>
@@ -50,6 +54,12 @@
       },
       GiteeFeedBack: function () {
         window.open("https://gitee.com/deepin-community-store/feedback", "_self", "")
+      },
+      Contri: function () {
+        window.open("https://gitee.com/deepin-community-store", "_self", "")
+      },
+      Donate: function () {
+        window.open("https://spark.deepinos.org.cn/", "_self", "")
       },
       Search: function () {
         this.$router.push({name: "Search"})
