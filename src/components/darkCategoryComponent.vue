@@ -51,8 +51,8 @@ export default {
         return {
             list: [],
             downloadContent: "DOWNLOAD",
-            source: "http://json.jerrywang.top",
-            imgSource: "https://deepin-community-store.gitee.io",
+            source: "https://json.jerrywang.top",
+            imgSource: "https://cdn.jsdelivr.net/gh/Jerrywang959/jsonpng@master",
         };
     },
     methods: {
