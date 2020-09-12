@@ -24,7 +24,7 @@
         <br>
         <button @click="officialwebsite" class="bt-feedback">商店官网</button>
         <br>
-        <button @click="GiteeFeedBack" class="bt-feedback">反馈中心</button>
+        <button @click="FeedBack" class="bt-feedback">反馈中心</button>
         <br>
         <button @click="Contri" class="bt-feedback">参与贡献</button>
         <br>
