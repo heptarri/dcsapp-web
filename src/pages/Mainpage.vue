@@ -27,7 +27,7 @@
         -->
         <button @click="distrowatch" class="bt-feedback"><b>Deepin国际排名</b></button>
         <br>
-        <button @click="officialwebsite" class="bt-feedback">商店官网</button>
+        <button @click="Wishwall" class="bt-feedback">愿望墙</button>
         <br>
         <button @click="FeedBack" class="bt-feedback">反馈中心</button>
         <br>
@@ -35,6 +35,10 @@
         <br>
         <button @click="Donate" class="bt-feedback">随喜捐赠</button>
         <br>
+        <!--
+        <button @click="Monitor" class="bt-feedback">节点监控</button>
+        <br>
+        -->
       </div>
     </center>
   </div>
@@ -50,6 +54,12 @@
     methods: {
       FeedBack: function () {
         window.open("https://www.deepinos.org/t/spark-feedback", "_self", "")
+      },
+      Wishwall: function () {
+        window.open("https://www.deepinos.org/t/Wish-wall", "_self", "")
+      },
+      Monitor: function () {
+        window.open("https://status.spark-app.store", "_self", "")
       },
       officialwebsite: function () {
         window.open(" https://www.spark-app.store/", "_self", "")
