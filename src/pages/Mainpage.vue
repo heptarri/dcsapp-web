@@ -24,8 +24,8 @@
         <!--
         <button @click="Search" class="bt-feedback" disabled>搜索应用(暂未开放)</button>
         <br>
-        -->
         <button @click="distrowatch" class="bt-feedback"><b>Deepin国际排名</b></button>
+        -->
         <br>
         <button @click="Wishwall" class="bt-feedback">愿望墙</button>
         <br>
@@ -35,10 +35,8 @@
         <br>
         <button @click="Donate" class="bt-feedback">随喜捐赠</button>
         <br>
-        <!--
         <button @click="Monitor" class="bt-feedback">节点监控</button>
         <br>
-        -->
       </div>
     </center>
   </div>
