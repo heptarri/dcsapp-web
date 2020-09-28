@@ -52,7 +52,7 @@ export default {
             list: [],
             downloadContent: "DOWNLOAD",
             source: "https://json.jerrywang.top",
-            imgSource: "https://cdn.jsdelivr.net/gh/Jerrywang959/jsonpng@master",
+            imgSource: "https://cdn.jsdelivr.net/gh/Jerrywang959/jsonpng",
         };
     },
     methods: {
