@@ -36,8 +36,16 @@ body {
   padding: 0;
   margin: 0;
   border: 0;
-  background:white;
 }
+.dark-body
+{
+  background-color: #252525;
+}
+.light-body
+{
+  background-color: white;
+}
+
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -83,17 +83,13 @@ export default {
     mounted() {
         this.getInfo();
     },
+    beforeCreate: function() {
+        document.body.className = 'dark-body';
+    }
 };
 </script>
 
 
 <style scoped>
 @import "../../static/dark.css";
-</style>
-
-<!--Crude dark mode page footer white leftover fix-->
-<style>
-body {
-  background: #252525;
-}
 </style>
