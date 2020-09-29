@@ -83,6 +83,9 @@ export default {
     mounted() {
         this.getInfo();
     },
+    beforeCreate: function() {
+        document.body.className = 'light-body';
+    }
 };
 </script>
 
