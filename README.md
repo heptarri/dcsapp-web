@@ -2,6 +2,7 @@
 
 ## This is part of Spark Store's Client Pages.
 
+6.3分支收到push后，会自动部署到dc，无需人工干预
 
 > If you find every trouble in this project,please e-mail at qingdkj@outlook.com .
 

@@ -10,6 +10,6 @@ RUN echo "deb http://mirrors.ustc.edu.cn/debian/ buster main contrib non-free  \
      deb http://mirrors.ustc.edu.cn/debian/ buster-backports main contrib non-free \n\
      deb http://mirrors.ustc.edu.cn/debian-security/ buster/updates main contrib non-free\n " \
      > /etc/apt/sources.list \
-     && apt update && apt install rsync git -y \
+     && apt update && apt install rsync -y \
      &&   echo "StrictHostKeyChecking=no" >> /etc/ssh/ssh_config 
 USER jenkins
