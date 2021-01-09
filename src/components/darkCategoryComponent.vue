@@ -44,12 +44,12 @@
     methods: {
       getInfo() {
         axios
-          //39.106.2.2:38324
-          .get(`http://img.shenmo.tech:38324/store/${this.category}/applist.json`)
-          //applist.json 软件列表
           .then(res => {
             this.list = res.data;
-          });
+          })
+        //39.106.2.2:38324
+      .get(`http://img.shenmo.tech:38324/store/${this.category}/applist.json`)
+        //applist.json 软件列表
       },
       GotoJson(pkgn) {
         console.log(

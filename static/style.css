@@ -37,7 +37,7 @@
     width: 20%;
     height: 50px;
     float: left;
-    transition: all 0.2s;
+    transition: all 0.15s;
     margin: 15px;
     color: #000000;
     overflow: hidden;
@@ -65,7 +65,7 @@
     width: 20%;
     height: 50px;
     float: left;
-    transition: all 0.2s;
+    transition: all 0.15s;
     margin: 15px;
     color: #000000;
     overflow: hidden;
@@ -93,7 +93,7 @@
     width: 30%;
     height: 50px;
     float: left;
-    transition: all 0.2s;
+    transition: all 0.15s;
     margin: 15px;
     color: #000000;
     overflow: hidden;
@@ -122,7 +122,7 @@
     width: 45%;
     height: 50px;
     float: left;
-    transition: all 0.2s;
+    transition: all 0.15s;
     margin: 15px;
     color: #000000;
     overflow: hidden;
@@ -151,7 +151,7 @@
     width: 70%;
     height: 50px;
     float: left;
-    transition: all 0.2s;
+    transition: all 0.15s;
     margin: 15px;
     color: #000000;
     overflow: hidden;

@@ -51,6 +51,7 @@
             this.list = res.data;
           });
       },
+      
       GotoJson(pkgn) {
         console.log(
           `http://img.shenmo.tech:38324/store/${this.category}/${pkgn}/app.json`
@@ -67,7 +68,6 @@
     }
   };
 </script>
-
 
 <style scoped>
   @import "../../static/style.css";
