@@ -57,7 +57,7 @@
         window.open("https://www.deepinos.org/t/Wish-wall", "_self", "")
       },
       Monitor: function () {
-        window.open("https://status.spark-app.store", "_self", "")
+        window.open("https://monitor.deepinos.org.cn/status", "_self", "")
       },
       officialwebsite: function () {
         window.open(" https://www.spark-app.store/", "_self", "")

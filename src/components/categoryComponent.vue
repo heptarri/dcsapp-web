@@ -51,8 +51,8 @@ export default {
         return {
             list: [],
             downloadContent: "DOWNLOAD",
-            source: "https://json.jerrywang.top",
-            imgSource: "https://cdn.jsdelivr.net/gh/Jerrywang959/jsonpng",
+            source: "https://d.store.deepinos.org.cn/",
+            imgSource: "https://d.store.deepinos.org.cn/",
         };
     },
     methods: {
