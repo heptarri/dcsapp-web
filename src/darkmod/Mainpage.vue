@@ -3,7 +3,7 @@
 <!--    主页-->
     <center>
       <br><br>
-      <h1 class="title">Spark Store</h1>
+      <h1 class="title"><a class="title" href="https://bbs.deepin.org/zh/post/239250">提示“下列签名无效： EXPKEYSIG的解决方法点我”</a></h1>
       <h3 class="more-info">
         Have more.
       </h3>
