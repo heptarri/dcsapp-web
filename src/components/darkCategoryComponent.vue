@@ -30,7 +30,7 @@
                         </span>
                     </span>
                     <!--
-          <img :src="`http://img.shenmo.tech:38324/store/${category}/${item.Pkgname}/icon.png`" alt="icon"
+          <img :src="`${imgSource}/store/${category}/${item.Pkgname}/icon.png`" alt="icon"
                class="icon-bg" @click="GotoJson(item.Pkgname)"/>
                     -->
                 </div>
@@ -51,14 +51,19 @@ export default {
         return {
             list: [],
             downloadContent: "DOWNLOAD",
-            source: "https://d.store.deepinos.org.cn/",
-            imgSource: "https://d.store.deepinos.org.cn/",
+            source: location.protocol + '//' + location.host + '/',
+            imgSource: location.protocol + '//' + location.host + '/',
         };
     },
     methods: {
+        getUrl(){
+            if (location.host == 'localhost:8080' || location.host == '127.0.0.1:8080'){
+                this.source = 'https://d.store.deepinos.org.cn/';
+                this.imgSource = 'https://d.store.deepinos.org.cn/';
+            }
+        },
         getInfo() {
             axios
-                //39.106.2.2:38324
                 .get(
                     `${this.source}/store/${this.category}/applist.json`
                 )
@@ -66,7 +71,7 @@ export default {
                 .then((res) => {
                     this.list = res.data;
                 });
-        },
+        },    
         GotoJson(pkgn) {
             console.log(
                 `${this.source}/store/${this.category}/${pkgn}/app.json`
@@ -81,6 +86,7 @@ export default {
         },
     },
     mounted() {
+        this.getUrl();
         this.getInfo();
     },
     beforeCreate: function() {
