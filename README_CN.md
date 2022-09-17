@@ -29,6 +29,11 @@ npm run build --report
 
 假设服务器网址为 http://localhost:8080/
 
+部署方式：
+./dist 文件夹为编译输出
+./dist/static 放服务器根目录
+./dist/index.html 放服务器 store 文件夹
+
 #### 浅色模式:
 
 > 主页的网址为 http://localhost:8080/#/
