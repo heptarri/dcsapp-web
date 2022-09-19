@@ -32,7 +32,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 部署方式：
 ./dist 文件夹为编译输出
-./dist/static 放服务器根目录下的static
+./dist/static 放服务器根目录下的 static
 ./dist/index.html 放服务器 store 文件夹内的 index.html
 
 

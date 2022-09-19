@@ -52,11 +52,11 @@ export default {
             list: [],
             downloadContent: "DOWNLOAD",
             source: location.protocol + '//' + location.host + '/',
-            imgSource: location.protocol + '//' + location.host + '/',
+            imgSource: "https://code.gitlink.org.cn/shenmo7192/spark-store-png-accelerate/raw/branch/master/",
         };
     },
     methods: {
-        getUrl(){
+        getUrl() {
             if (location.host == 'localhost:8080' || location.host == '127.0.0.1:8080'){
                 this.source = 'https://d.store.deepinos.org.cn/';
                 this.imgSource = 'https://d.store.deepinos.org.cn/';
