@@ -37,8 +37,10 @@
   color: #dcdcdc;
   border-radius: 18px;
   background: #333333;
+  background: linear-gradient(145deg, #313030, #332f2f);
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow:  11px 11px 22px #1c1c1c,
+  -11px -11px 22px #2e2e2e;
 
   overflow: hidden;
 }
@@ -47,7 +49,12 @@
   -webkit-transform: scale(1.07, 1.07);
   transform: scale(1.07, 1.07);
 }
-
+.item:active{
+  border-radius: 32px;
+  background: linear-gradient(145deg, #212121, #282828);
+  box-shadow:  11px 11px 22px #1c1c1c,
+  -11px -11px 22px #2e2e2e;
+}
 .show{
   overflow: hidden;
 }
@@ -88,13 +95,14 @@
 }
 .app-name{
   text-align: left;
+  margin: 20px;
   font-weight: lighter;
   display:block;
   overflow:hidden;
   word-break:keep-all;
   white-space:nowrap;
   text-overflow:ellipsis;
-  color: #FFFFFF;
+  color: #f1ecec;
   padding-right: 10px;
 }
 .app-more{
