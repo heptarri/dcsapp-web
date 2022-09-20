@@ -35,9 +35,11 @@
   color: #6d6d6d;
   border-radius: 18px;
   background-color: #F4F4F6;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-
+  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); */
+  box-shadow:  5px 5px 10px #e0e0e0,
+  -5px -5px 10px #ffffff;
 
   overflow: hidden;
 }
@@ -46,6 +48,12 @@
   -webkit-transform: scale(1.07, 1.07);
   transform: scale(1.07, 1.07);
 
+}
+.item:active{
+  border-radius: 32px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow:  5px 5px 10px #e0e0e0,
+  -5px -5px 10px #ffffff;
 }
 .show{
   overflow: hidden;
@@ -87,8 +95,8 @@
   text-align: center;
 }
 .app-name{
-
   text-align: left;
+  margin: 20px;
   font-weight: lighter;
   display:block;
   overflow:hidden;

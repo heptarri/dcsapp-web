@@ -29,10 +29,10 @@
                             </div>
                         </span>
                     </span>
-                    <!--
+
           <img :src="`${imgSource}/store/${category}/${item.Pkgname}/icon.png`" alt="icon"
                class="icon-bg" @click="GotoJson(item.Pkgname)"/>
-                    -->
+
                 </div>
             </div>
         </center>
