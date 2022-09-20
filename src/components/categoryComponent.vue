@@ -57,7 +57,7 @@ export default {
     },
     methods: {
         getUrl() {
-            if (location.host == 'localhost:8080' || location.host == '127.0.0.1:8080'){
+            if (location.hostname == 'localhost' || location.hostname == '127.0.0.1'){
                 this.source = 'https://d.store.deepinos.org.cn/';
                 this.imgSource = 'https://d.store.deepinos.org.cn/';
             }
