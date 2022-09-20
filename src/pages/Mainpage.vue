@@ -3,7 +3,7 @@
 <!--    主页-->
     <center>
       <br><br>
-      <h1 class="title">Spark Store</h1>
+      <h1 class="title"><a href="https://bbs.deepin.org/zh/post/239250">提示“下列签名无效： EXPKEYSIG的解决方法点我”</a></h1>
       <h3 class="more-info">
         Have more.
       </h3>
@@ -14,14 +14,28 @@
           愿望墙: http://www.shenmo.tech:420/?p=91
           应用问题反馈: http://www.shenmo.tech:420/?p=419
           APP建议: http://www.shenmo.tech:420/?p=422
+          国际排名：http://distrowatch.com/table.php?distribution=deepin
+          
+          商店官网: https://www.spark-app.store/
+          所有的问题反馈换成这统一的入口
+          社区反馈中心: https://www.deepinos.org/t/spark-feedback
+          gitee反馈中心: https://gitee.com/deepin-community-store/feedback
       -->
+        <!--
         <button @click="Search" class="bt-feedback" disabled>搜索应用(暂未开放)</button>
         <br>
-        <button @click="Dream" class="bt-feedback">愿望墙</button>
+        <button @click="distrowatch" class="bt-feedback"><b>Deepin国际排名</b></button>
+        -->
         <br>
-        <button @click="FeedBack" class="bt-feedback">问题反馈</button>
+        <button @click="Wishwall" class="bt-feedback">愿望墙</button>
         <br>
-        <button @click="Proposal" class="bt-feedback">APP建议</button>
+        <button @click="FeedBack" class="bt-feedback">反馈中心</button>
+        <br>
+        <button @click="Contri" class="bt-feedback">参与贡献</button>
+        <br>
+        <button @click="Donate" class="bt-feedback">随喜捐赠</button>
+        <br>
+        <button @click="Monitor" class="bt-feedback">节点监控</button>
         <br>
       </div>
     </center>
@@ -36,14 +50,29 @@
       return {}
     },
     methods: {
-      Dream: function () {
-        window.open("http://www.shenmo.tech:420/?p=91", "_self", "")
-      },
       FeedBack: function () {
-        window.open("http://www.shenmo.tech:420/?p=419", "_self", "")
+        window.open("https://www.deepinos.org/t/spark-feedback", "_self", "")
       },
-      Proposal: function () {
-        window.open("http://www.shenmo.tech:420/?p=422", "_self", "")
+      Wishwall: function () {
+        window.open("https://www.deepinos.org/t/Wish-wall", "_self", "")
+      },
+      Monitor: function () {
+        window.open("https://monitor.deepinos.org.cn/status", "_self", "")
+      },
+      officialwebsite: function () {
+        window.open(" https://www.spark-app.store/", "_self", "")
+      },
+      distrowatch: function () {
+        window.open("https://distrowatch.com/table.php?distribution=deepin", "_self", "")
+      },
+      GiteeFeedBack: function () {
+        window.open("https://gitee.com/deepin-community-store/feedback", "_self", "")
+      },
+      Contri: function () {
+        window.open("https://gitee.com/deepin-community-store", "_self", "")
+      },
+      Donate: function () {
+        window.open("https://spark.deepinos.org.cn/", "_self", "")
       },
       Search: function () {
         this.$router.push({name: "Search"})
@@ -68,14 +97,22 @@
   .bt-feedback {
     width: 300px;
     padding: 10px;
+    margin: 15px;
     /*margin-top: 40px;*/
     border: transparent;
-    background: #f3f3f3;
-    transition: all 0.2s;
+    background: #F4F4F6;
+    transition: all 0.25s;
+    border-radius: 18px;
+    color: #6d6d6d;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
   }
 
   .bt-feedback:hover {
-    background: #e8e8e8;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    -webkit-transform: scale(1.07, 1.07);
+    transform: scale(1.07, 1.07);
   }
 
   .buttons {

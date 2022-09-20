@@ -2,6 +2,7 @@
 
 ## This is part of Spark Store's Client Pages.
 
+6.3分支收到push后，会自动部署到dc，无需人工干预
 
 > If you find every trouble in this project,please e-mail at qingdkj@outlook.com .
 
@@ -28,6 +29,12 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ## How to use?
 
 假设服务器网址为 http://localhost:8080/
+
+部署方式：
+./dist 文件夹为编译输出
+./dist/static 放服务器根目录下的 static
+./dist/index.html 放服务器 store 文件夹内的 index.html
+
 
 #### LIGHTMOD:
 

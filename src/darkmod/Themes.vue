@@ -1,4 +1,5 @@
 <template>
+
   <div>
 <!--    主题美化类-->
     <categoryComponent category="themes"></categoryComponent>
