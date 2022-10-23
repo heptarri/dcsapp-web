@@ -3,7 +3,7 @@
 <!--    主页-->
     <center>
       <br><br>
-      <h1 class="title"><a href="https://blog.shenmo.tech/post/3.3.0.1-%E6%98%9F%E7%81%AB%E5%95%86%E5%BA%97%E7%B4%A7%E6%80%A5%E4%BF%AE%E5%A4%8D%E6%9B%B4%E6%96%B0%E6%A8%A1%E5%9D%97/">星火商店3.3版本软件更新功能不生效的解决方法点我</a></h1>
+      <h1 class="title"><a href="https://bbs.chinauos.com/post/13497">星火商店3.3版本软件更新功能不生效的解决方法点我</a></h1>
       <h3 class="more-info">
         Have more.
       </h3>
