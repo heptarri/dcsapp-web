@@ -71,6 +71,7 @@
   pointer-events: none;
 }
 .item:hover .icon-bg{
+  pointer-events: none;
   filter: blur(30px) opacity(30%);
 }
 
