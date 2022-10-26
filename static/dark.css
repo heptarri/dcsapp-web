@@ -63,16 +63,19 @@
   width: 300px;
   height: 100px;
   float: left;
-  filter: blur(50px) opacity(0%);
+  filter: blur(25px) opacity(2%);
+  transform: scale(3);
   position: relative;
   top: -100px;
   transition: all 0.3s;
   z-index: -1;
-  pointer-events: none;
+  visibility: hidden;
 }
 .item:hover .icon-bg{
   pointer-events: none;
-  filter: blur(30px) opacity(30%);
+  filter: blur(25px) opacity(30%);
+  transform: scale(3);
+  visibility: visible;
 }
 
 .icon-m:hover {
