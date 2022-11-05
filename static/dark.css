@@ -43,6 +43,7 @@
   -11px -11px 22px #2e2e2e;
 
   overflow: hidden;
+  z-index: 0;
 }
 .item:hover {
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -67,13 +68,13 @@
   transform: scale(3);
   position: relative;
   top: -100px;
-  transition: all 0.3s;
+  transition-property: all linear;
   z-index: -1;
   visibility: hidden;
 }
 .item:hover .icon-bg{
   pointer-events: none;
-  filter: blur(25px) opacity(30%);
+  filter: blur(25px) opacity(25%);
   transform: scale(3);
   visibility: visible;
 }
