@@ -2,6 +2,7 @@
   <div id="app">
 <!--    主页-->
     <center>
+      <br><br>
       <h1 class="title"><a href="https://bbs.chinauos.com/post/13497">星火商店3.3版本软件更新功能不生效的解决方法点我</a></h1>
       <h3 class="more-info">
         Have more.
