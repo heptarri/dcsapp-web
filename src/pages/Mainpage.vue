@@ -59,7 +59,7 @@
       
       //节点监控
       Monitor(){
-        window.open("https://monitor.deepinos.org.cn/status", "_blank", "")
+        window.open("https://status.deepinos.org.cn/", "_blank", "")
       },
       //参与贡献
       Contri(){window.open("https://gitee.com/deepin-community-store", "_blank", "")},
