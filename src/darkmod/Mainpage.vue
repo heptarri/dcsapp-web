@@ -3,7 +3,7 @@
 <!--    主页-->
     <center>
       <br><br>
-      <h1 class="title"><a href="https://bbs.chinauos.com/post/13497">星火商店3.3版本软件更新功能不生效的解决方法点我</a></h1>
+      <h1 class="title">Spark Store</h1>
       <h3 class="more-info">
         Have more.
       </h3>
@@ -15,13 +15,18 @@
           应用问题反馈: http://www.shenmo.tech:420/?p=419
           APP建议: http://www.shenmo.tech:420/?p=422
           国际排名：http://distrowatch.com/table.php?distribution=deepin
+          
+          商店官网: https://www.spark-app.store/
+          所有的问题反馈换成这统一的入口
+          社区反馈中心: https://www.deepinos.org/t/spark-feedback
+          gitee反馈中心: https://gitee.com/deepin-community-store/feedback
       -->
         <!--
         <button @click="Search" class="bt-feedback" disabled>搜索应用(暂未开放)</button>
         <br>
         <button @click="distrowatch" class="bt-feedback"><b>Deepin国际排名</b></button>
-        <br>
         -->
+        <br>
         <button @click="Wishwall" class="bt-feedback">愿望墙</button>
         <br>
         <button @click="FeedBack" class="bt-feedback">反馈中心</button>
@@ -45,33 +50,35 @@
       return {}
     },
     methods: {
-      FeedBack: function () {
-        window.open("https://www.deepinos.org/t/spark-feedback", "_self", "")
+      //反馈中心
+      FeedBack() {
+        window.open(" https://www.deepinos.org/t/spark-feedback", "_blank", "")
       },
-      Wishwall: function () {
-        window.open("https://www.deepinos.org/t/Wish-wall", "_self", "")
+      //愿望墙,跳转到指定页面
+      Wishwall(){window.open(" https://www.deepinos.org/t/Wish-wall", "_blank", "")},
+      
+      //节点监控
+      Monitor(){
+        window.open("https://status.deepinos.org.cn/", "_blank", "")
       },
-      Monitor: function () {
-        window.open("https://monitor.deepinos.org.cn/status", "_self", "")
-      },
-      officialwebsite: function () {
+      //参与贡献
+      Contri(){window.open("https://gitee.com/deepin-community-store", "_blank", "")},
+      //随喜捐赠，地址改为二维码地址
+      Donate(){window.open("https://donate.deepinos.org.cn/donate/index.html", "_blank", "")},
+     /*  officialwebsite: function () {
         window.open(" https://www.spark-app.store/", "_self", "")
-      },
-      distrowatch: function () {
+      }, */
+      //国际排名
+      /* distrowatch: function () {
         window.open("https://distrowatch.com/table.php?distribution=deepin", "_self", "")
-      },
-      GiteeFeedBack: function () {
+      }, */
+     /*  GiteeFeedBack: function () {
         window.open("https://gitee.com/deepin-community-store/feedback", "_self", "")
-      },
-      Contri: function () {
-        window.open("https://gitee.com/deepin-community-store", "_self", "")
-      },
-      Donate: function () {
-        window.open("https://spark.deepinos.org.cn/", "_self", "")
-      },
-      Search: function () {
+      }, */
+      
+     /*  Search: function () {
         this.$router.push({name: "Search"})
-      }
+      } */
     }
   }
 </script>
