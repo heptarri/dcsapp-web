@@ -59,12 +59,12 @@
       
       //节点监控
       Monitor(){
-        window.open("https://status.deepinos.org.cn/", "_blank", "")
+        window.open("https://status.deepinos.org.cn/", "_self", "")
       },
       //参与贡献
       Contri(){window.open("https://gitee.com/deepin-community-store", "_blank", "")},
       //随喜捐赠，地址改为二维码地址
-      Donate(){window.open("https://donate.deepinos.org.cn/donate/index.html", "_blank", "")},
+      Donate(){window.open("https://donate.deepinos.org.cn/donate/index.html", "_self", "")},
      /*  officialwebsite: function () {
         window.open(" https://www.spark-app.store/", "_self", "")
       }, */
