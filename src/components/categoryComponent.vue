@@ -5,34 +5,22 @@
         <center>
             <div class="list">
                 <!--        单个应用模块-->
-                <div
-                    class="item"
-                    v-for="item in list"
-                    :key="item.tip"
-                    @click="GotoJson(item.Pkgname)"
-                >
+                <div class="item" v-for="item in list" :key="item.tip" @click="GotoJson(item.Pkgname)">
                     <span class="show">
                         <!--            应用icon-->
-                        <img
-                            :src="`${imgSource}/store/${category}/${item.Pkgname}/icon.png`"
-                            alt="icon"
-                            class="icon-m"
-                            @click="GotoJson(item.Pkgname)"
-                        />
+                        <img :src="`${imgSource}/store/${category}/${item.Pkgname}/icon.png`" alt="icon"
+                            class="icon-m" />
                         <span class="app-title">
                             <!--              应用名-->
                             <div>
-                                <h3 class="app-name" :title="`${item.Name}`">{{item.Name}}</h3>
+                                <h3 class="app-name" :title="`${item.Name}`">{{ item.Name }}</h3>
                             </div>
                             <div>
-                                <h4 class="app-more" :title="`${item.More}`">{{item.More}}</h4>
+                                <h4 class="app-more" :title="`${item.More}`">{{ item.More }}</h4>
                             </div>
                         </span>
                     </span>
-                    
-          <img :src="`${imgSource}/store/${category}/${item.Pkgname}/icon.png`" alt="icon"
-               class="icon-bg" @click="GotoJson(item.Pkgname)"/>
-                   
+                    <img :src="`${imgSource}/store/${category}/${item.Pkgname}/icon.png`" alt="icon" class="icon-bg" />
                 </div>
             </div>
         </center>
@@ -57,7 +45,7 @@ export default {
     },
     methods: {
         getUrl() {
-            if (location.hostname == 'localhost' || location.hostname == '127.0.0.1'){
+            if (location.hostname == 'localhost' || location.hostname == '127.0.0.1') {
                 this.source = 'https://d.store.deepinos.org.cn/';
                 this.imgSource = 'https://d.store.deepinos.org.cn/';
             }
@@ -69,9 +57,10 @@ export default {
                 )
                 //applist.json 软件列表
                 .then((res) => {
+                    // console.log(res.data, '<=======');
                     this.list = res.data;
                 });
-        },    
+        },
         GotoJson(pkgn) {
             console.log(
                 `${this.source}/store/${this.category}/${pkgn}/app.json`
@@ -89,7 +78,7 @@ export default {
         this.getUrl();
         this.getInfo();
     },
-    beforeCreate: function() {
+    beforeCreate() {
         document.body.className = 'light-body';
     }
 };
